@@ -2098,7 +2098,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=67;
+		items=102;
 		class Item0
 		{
 			position[]={36646.621,4.4355869,12103.951};
@@ -2484,7 +2484,7 @@ class Mission
 		};
 		class Item53
 		{
-			position[]={24689.629,7.4310384,12484.453};
+			position[]={24709.391,7.4310384,12459.301};
 			name="heliSpawn_9";
 			type="Empty";
 			colorName="ColorGreen";
@@ -2584,6 +2584,332 @@ class Mission
 			name="GenStore4_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
+		};
+		class Item67
+		{
+			position[]={5626.9658,12.420962,18500.729};
+			name="Town_13";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item68
+		{
+			position[]={6908.5313,7.3837967,18124.602};
+			name="Town_12";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item69
+		{
+			position[]={22236.676,13.871477,19292.361};
+			name="Town_14";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item70
+		{
+			position[]={19728.123,18.31325,24200.943};
+			name="Town_15";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item71
+		{
+			position[]={22095.498,16.947031,25598.305};
+			name="Town_16";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item72
+		{
+			position[]={28460.465,6.855617,35180.32};
+			name="Town_7";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item73
+		{
+			position[]={32133.77,5.2507896,29817.305};
+			name="Town_17";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item74
+		{
+			position[]={34918.039,7.3014302,26136.494};
+			name="Town_18";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item75
+		{
+			position[]={31722.336,197.94586,25035.234};
+			name="Town_19";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item76
+		{
+			position[]={16254.076,7.9736924,33610.395};
+			name="Town_20";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item77
+		{
+			position[]={16881.152,8.5,33932.645};
+			name="Town_22";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item78
+		{
+			position[]={4297.8882,5.3958721,17811.201};
+			name="TERRITORY_0_PERTH_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=200;
+			b=40;
+		};
+		class Item79
+		{
+			position[]={5647.1816,12.385927,18464.039};
+			name="TERRITORY_0_PERTH_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=45;
+			b=50;
+		};
+		class Item80
+		{
+			position[]={6263.9932,7.3800001,18701.625};
+			name="TERRITORY_PERTH_0_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=50;
+			b=50;
+			angle=45;
+		};
+		class Item81
+		{
+			position[]={17137.15,8.5,33978.223};
+			name="TERRITORY_1_DARWIN_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=75;
+			b=75;
+			angle=19;
+		};
+		class Item82
+		{
+			position[]={17067.887,7.8246131,33389.711};
+			name="TERRITORY_1_DARWIN_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=90;
+			b=30;
+		};
+		class Item83
+		{
+			position[]={15717.409,6.061039,33185.563};
+			name="TERRITORY_1_DARWIN_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=80;
+			b=40;
+		};
+		class Item84
+		{
+			position[]={9590.2568,5.6879859,21412.855};
+			name="TERRITORY_2_LEONARA_A";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=75;
+			b=50;
+			angle=15;
+		};
+		class Item85
+		{
+			position[]={9588.6533,165.40822,20527.184};
+			name="TERRITORY_2_LEONARA_B";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=60;
+			b=100;
+			angle=115;
+		};
+		class Item86
+		{
+			position[]={8993.8486,72.629967,21146.986};
+			name="TERRITORY_2_LEONARA_C";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=75;
+			b=80;
+		};
+		class Item87
+		{
+			position[]={23405.154,0.70155215,22157.033};
+			name="TERRITORY_3_EYRE_A";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=75;
+			b=80;
+		};
+		class Item88
+		{
+			position[]={22095.469,9.4042702,21512.139};
+			name="TERRITORY_3_EYRE_C";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=75;
+			b=80;
+		};
+		class Item89
+		{
+			position[]={24420.104,43.420837,21858.279};
+			name="TERRITORY_3_EYRE_B";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=115;
+			b=115;
+		};
+		class Item90
+		{
+			position[]={29108.453,125.29549,34132.977};
+			name="TERRITORY_4_WEIPA_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=110;
+		};
+		class Item91
+		{
+			position[]={28424.289,6.9317265,35193.191};
+			name="TERRITORY_4_WEIPA_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=110;
+		};
+		class Item92
+		{
+			position[]={29006.025,4.4632878,36644.922};
+			name="TERRITORY_4_WEIPA_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=50;
+			b=60;
+		};
+		class Item93
+		{
+			position[]={33139.051,33.280964,3982.0522};
+			name="TERRITORY_5_TASMANIA_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=70;
+			b=150;
+		};
+		class Item94
+		{
+			position[]={33723.699,6.7173929,3458.019};
+			name="TERRITORY_5_TASMANIA_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=65;
+			angle=40;
+		};
+		class Item95
+		{
+			position[]={32242.736,7.766644,2745.9805};
+			name="TERRITORY_5_TASMANIA_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=120;
+			b=65;
+			angle=40;
+		};
+		class Item96
+		{
+			position[]={24871.781,7.4372334,13849.509};
+			name="TERRITORY_6_ADELAIDE_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=100;
+			angle=150;
+		};
+		class Item97
+		{
+			position[]={25323.471,7.4310384,12726.333};
+			name="TERRITORY_5_ADELAIDE_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=100;
+		};
+		class Item98
+		{
+			position[]={23444.369,7.4310384,13252.883};
+			name="TERRITORY_6_ADELAIDE_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=70;
+			b=35;
+		};
+		class Item99
+		{
+			position[]={19823.246,18.312147,24382.529};
+			name="TERRITORY_7_ALICE_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=100;
+			b=120;
+			angle=41;
+		};
+		class Item100
+		{
+			position[]={22175.934,16.947018,25630.682};
+			name="TERRITORY_7_ALICE_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=90;
+			b=120;
+		};
+		class Item101
+		{
+			position[]={22649.359,22.799711,24787.857};
+			name="TERRITORY_7_ALICE_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=130;
+			b=60;
+			angle=30;
 		};
 	};
 };

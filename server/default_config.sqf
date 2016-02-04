@@ -81,9 +81,9 @@ A3W_extDB_IniName = "a3wasteland"; // Name of the INI file in extDB\db_custom to
 A3W_extDB_Debug = 0;               // Log all queries to server RPT (0 = no, 1 = yes)
 
 // Server Naming
-A3W_serverName = "Your Server";		//Name of your server for Player HUD
-A3W_serverIP = "0.0.0.0";		    //IP address of your server for Player HUD
-A3W_serverWWW ="www.name.com";       //Website for your server
+A3W_serverName = "Brothers in Blood";		//Name of your server for Player HUD
+A3W_serverIP = "TS3.BIBGAMING.COM";		    //IP address of your server for Player HUD
+A3W_serverWWW ="BIBGAMING.COM";       //Website for your server
 
 // Spawning settings
 A3W_serverSpawning = 1;            // Vehicle, object, and loot spawning (0 = no, 1 = yes)
@@ -109,7 +109,7 @@ A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territ
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
 A3W_payrollInterval = 30*60;       // Delay in seconds between each payroll
 A3W_payrollAmount = 100;           // Amount of money rewarded per territory on each payroll
-A3W_territoryAllowed = [0,1,2,3,4,5];  //Territory Allowed (0:CHERNOGORSK,1:BEREZINO,2:NWAF,3:ELEKTRO)
+A3W_territoryAllowed = [0,1,2,3,4,5,6,7];  //Territory Allowed [perth,darwin,leonara,eyre,weipa,tasmania,adelaide,alice]
 
 // Mission settings
 A3W_serverMissions = 1;            // Enable server missions (0 = no, 1 = yes)
