@@ -2,8 +2,8 @@ _pos = [29108.453,34132.977,125.29549];
 _marker = createMarker ["TERRITORY_4_WEIPA_A", _pos];
 _marker setMarkerShape "RECTANGLE";
 _marker setMarkerBrush "DiagGrid";
-_marker setMarkerSize [20, 60];
-_marker setMarkerDir 97.167;
+_marker setMarkerSize [100, 110];
+_marker setMarkerDir 0;
 _marker setMarkerColor "ColorYellow";
 _marker setMarkerType "Empty";
 
@@ -18,8 +18,8 @@ _pos = [28424.289,35193.191,6.9317265];
 _marker = createMarker ["TERRITORY_4_WEIPA_B", _pos];
 _marker setMarkerShape "RECTANGLE";
 _marker setMarkerBrush "DiagGrid";
-_marker setMarkerSize [30, 60];
-_marker setMarkerDir -22.059601;
+_marker setMarkerSize [100, 110];
+_marker setMarkerDir 0;
 _marker setMarkerColor "ColorYellow";
 _marker setMarkerType "Empty";
 
@@ -35,8 +35,8 @@ _pos = [29006.025,36644.922,4.4632878];
 _marker = createMarker ["TERRITORY_4_WEIPA_C", _pos];
 _marker setMarkerShape "RECTANGLE";
 _marker setMarkerBrush "DiagGrid";
-_marker setMarkerSize [20, 80];
-_marker setMarkerDir 103.68429;
+_marker setMarkerSize [50, 60];
+_marker setMarkerDir 0;
 _marker setMarkerColor "ColorYellow";
 _marker setMarkerType "Empty";
 
