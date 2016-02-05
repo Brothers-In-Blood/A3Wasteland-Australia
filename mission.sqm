@@ -2109,7 +2109,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={30547.193,3.2393537,8574.6934};
+			position[]={24784.828,7.4310384,13248.209};
 			name="Mission_2";
 			type="Empty";
 			colorName="ColorOrange";
