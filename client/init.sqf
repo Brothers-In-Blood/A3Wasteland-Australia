@@ -25,9 +25,6 @@ groupManagmentActive = false;
 pvar_PlayerTeamKiller = objNull;
 doCancelAction = false;
 
-//AJ Beacondetector
-BeaconScanInProgress = false;
-
 //Initialization Variables
 playerCompiledScripts = false;
 playerSetupComplete = false;
@@ -59,7 +56,7 @@ player addEventHandler ["Killed", { _this spawn onKilled }];
 
 A3W_scriptThreads pushBack execVM "client\functions\evalManagedActions.sqf";
 
-pvar_playerRespawn = player;
+pvar_playerRespawn = [player, objNull];
 publicVariableServer "pvar_playerRespawn";
 
 //Player setup
@@ -74,7 +71,6 @@ if (["A3W_playerSaving"] call isConfigOn) then
 {
 	call compile preprocessFileLineNumbers "persistence\client\players\setupPlayerDB.sqf";
 	call fn_requestPlayerData;
-	9999 cutText ["Received Player Info", "BLACK", 0.01];
 
 	waitUntil {!isNil "playerData_loaded"};
 
@@ -90,7 +86,6 @@ if (["A3W_playerSaving"] call isConfigOn) then
 		};
 	});
 };
-
 
 if (isNil "playerData_alive") then
 {
@@ -122,7 +117,11 @@ call compile preprocessFileLineNumbers "client\functions\setupClientPVars.sqf";
 
 //client Executes
 A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
-[] execVM "client\functions\initSurvival.sqf";
+
+if (["A3W_survivalSystem"] call isConfigOn) then
+{
+	execVM "client\functions\initSurvival.sqf";
+};
 
 [] spawn
 {
@@ -132,7 +131,6 @@ A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 };
 
 [] spawn playerSpawn;
-[] spawn playerCustomUniform;
 
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
@@ -164,8 +162,3 @@ call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 		};
 	} forEach crew _x;
 } forEach allUnitsUAV;
-
-if (["A3W_disableArtilleryComputer"] call isConfigOn) then
-{
-  enableEngineArtillery false;
-};

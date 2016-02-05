@@ -6,15 +6,20 @@
 //	@file Author: [404] Deadbeat, [GoT] JoSchaap, AgentRev
 //	@file Description: The main init.
 
+#include "debugFlag.hpp"
+
+#ifdef A3W_DEBUG
+#define DEBUG true
+#else
 #define DEBUG false
-
-diag_log format ["############################# Wasteland 1 #############################"];
-
-//Disable Environment (bunnies)
-//waitUntil {time > 0};
-//enableEnvironment false;
+#endif
 
 enableSaving [false, false];
+
+// block script injection exploit
+inGameUISetEventHandler ["PrevAction", ""];
+inGameUISetEventHandler ["Action", ""];
+inGameUISetEventHandler ["NextAction", ""];
 
 _descExtPath = str missionConfigFile;
 currMissionDir = compileFinal str (_descExtPath select [0, count _descExtPath - 15]);
@@ -33,7 +38,6 @@ A3W_scriptThreads = [];
 
 [DEBUG] call compile preprocessFileLineNumbers "globalCompile.sqf";
 
-
 //init Wasteland Core
 [] execVM "config.sqf";
 [] execVM "storeConfig.sqf"; // Separated as its now v large
@@ -48,19 +52,23 @@ if (!isDedicated) then
 			9999 cutText ["Welcome to A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
 
 			waitUntil {!isNull player};
+			player setVariable ["playerSpawning", true, true];
+			playerSpawning = true;
+
 			removeAllWeapons player;
 			client_initEH = player addEventHandler ["Respawn", { removeAllWeapons (_this select 0) }];
 
 			// Reset group & side
 			[player] joinSilent createGroup playerSide;
-			player setVariable ["playerSpawning", true, true];
 
 			execVM "client\init.sqf";
+
+			if ((vehicleVarName player) select [0,17] == "BIS_fnc_objectVar") then { player setVehicleVarName "" }; // undo useless crap added by BIS
 		}
 		else // Headless
 		{
 			waitUntil {!isNull player};
-			if (typeOf player == "HeadlessClient_F") then
+			if (getText (configFile >> "CfgVehicles" >> typeOf player >> "simulation") == "headlessclient") then
 			{
 				execVM "client\headless\init.sqf";
 			};
@@ -72,17 +80,16 @@ if (isServer) then
 {
 	diag_log format ["############################# %1 #############################", missionName];
 	diag_log "WASTELAND SERVER - Initializing Server";
-	call compile preprocessFile "mapConfig\territories\init_external.sqf";
-	call compile preprocessFile "mapConfig\buildings\init_external.sqf";
 	[] execVM "server\init.sqf";
 };
 
-//init 3rd Party Scripts
-[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
-[] execVM "addons\proving_ground\init.sqf";
-[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
-[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
-[] execVM "addons\JumpMF\init.sqf";
-[] execVM "addons\EtV\init.sqf";
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
-
+if (hasInterface || isServer) then
+{
+	//init 3rd Party Scripts
+	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
+	[] execVM "addons\proving_ground\init.sqf";
+	[] execVM "addons\JumpMF\init.sqf";
+	[] execVM "addons\outlw_magRepack\MagRepack_init.sqf";
+	[] execVM "addons\lsd_nvg\init.sqf";
+	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
+};

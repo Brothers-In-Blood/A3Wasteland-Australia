@@ -41,9 +41,7 @@ _setupObjects =
 
 	_createVehicle =
 	{
-		private ["_type", "_position", "_direction", "_vehicle", "_soldier", "_loadout"];
-
-		_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+		private ["_type", "_position", "_direction", "_vehicle", "_soldier"];
 
 		_type = _this select 0;
 		_position = _this select 1;
@@ -56,17 +54,17 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
+		_soldier = [_aiGroup, _position] call createRandomSoldier;
 		_soldier moveInDriver _vehicle;
 
-		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
+		_soldier = [_aiGroup, _position] call createRandomSoldier;
 		_soldier moveInCargo [_vehicle, 0];
 
 		switch (true) do
 		{
 			case (_type isKindOf "Offroad_01_armed_base_F"):
 			{
-				_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
+				_soldier = [_aiGroup, _position] call createRandomSoldier;
 				_soldier moveInGunner _vehicle;
 			};
 			case (_type isKindOf "C_Van_01_box_F"):
@@ -131,13 +129,13 @@ _failedExec = nil;
 _successExec =
 {
 	// Mission completed
-	_box1 = createVehicle ["rhs_weapons_crate_ak_standard", _lastPos, [], 2, "None"];
+	_box1 = createVehicle ["Box_NATO_Wps_F", _lastPos, [], 2, "None"];
 	_box1 setDir random 360;
-	[_box1, randomMissionSpecialCargo, 1] call randomCargoFill;
+	[_box1, "mission_USSpecial2"] call fn_refillbox;
 
-	_box2 = createVehicle ["rhs_weapons_crate_ak_ammo_545x39_standard", _lastPos, [], 2, "None"];
+	_box2 = createVehicle ["Box_East_WpsSpecial_F", _lastPos, [], 2, "None"];
 	_box2 setDir random 360;
-	[_box2, randomMissionExplosiveCargo, 1] call randomCargoFill;
+	[_box2, "mission_USLaunchers"] call fn_refillbox;
 
 	_successHintMessage = "The convoy has been stopped, the weapon crates and vehicles are now yours to take.";
 };

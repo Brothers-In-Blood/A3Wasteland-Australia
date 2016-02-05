@@ -43,13 +43,13 @@ mf_compile = compileFinal
 		if (_isDebug) then {
 			compile format ["call compile preProcessFileLineNumbers ""%1""", _path]
 		} else {
-			compileFinal preProcessFileLineNumbers _path;
+			compileFinal preProcessFileLineNumbers _path
 		};
 	} else {
 		if (_isDebug) then {
 			compile toString _code
 		} else {
-			compileFinal toString _code;
+			compileFinal toString _code
 		};
 	};
 ');
@@ -70,11 +70,12 @@ mf_init =
 _clientFunc = "client\functions";
 _serverFunc = "server\functions";
 
+A3W_fnc_isBleeding = [_serverFunc, "fn_isBleeding.sqf"] call mf_compile;
+A3W_fnc_isUnconscious = [_serverFunc, "fn_isUnconscious.sqf"] call mf_compile;
 A3W_fnc_pushVehicle = [_serverFunc, "pushVehicle.sqf"] call mf_compile;
 A3W_fnc_setName = [_clientFunc, "fn_setName.sqf"] call mf_compile;
 A3W_fnc_setupAntiExplode = [_clientFunc, "fn_setupAntiExplode.sqf"] call mf_compile;
 A3W_fnc_towingHelper = [_serverFunc, "towingHelper.sqf"] call mf_compile;
-fn_allPlayers = [_serverFunc, "allPlayers.sqf"] call mf_compile;
 applyVehicleTexture = "client\systems\vehicleStore\applyVehicleTexture.sqf" call mf_compile;
 cargoToPairs = [_serverFunc, "cargoToPairs.sqf"] call mf_compile;
 detachTowedObject = [_serverFunc, "detachTowedObject.sqf"] call mf_compile;
@@ -82,6 +83,7 @@ FAR_setKillerInfo = "addons\far_revive\FAR_setKillerInfo.sqf" call mf_compile;
 findSafePos = [_serverFunc, "findSafePos.sqf"] call mf_compile;
 fn_addScore = [_serverFunc, "fn_addScore.sqf"] call mf_compile;
 fn_addToPairs = [_serverFunc, "fn_addToPairs.sqf"] call mf_compile;
+fn_allPlayers = [_serverFunc, "allPlayers.sqf"] call mf_compile;
 fn_boundingBoxReal = [_serverFunc, "fn_boundingBoxReal.sqf"] call mf_compile;
 fn_enableSimulationGlobal = [_serverFunc, "fn_enableSimulationGlobal.sqf"] call mf_compile;
 fn_enableSimulationServer = [_serverFunc, "fn_enableSimulationServer.sqf"] call mf_compile;
@@ -104,10 +106,12 @@ fn_splitString = [_serverFunc, "fn_splitString.sqf"] call mf_compile;
 fn_startsWith = [_serverFunc, "fn_startsWith.sqf"] call mf_compile;
 fn_ejectCorpse = [_serverFunc, "fn_ejectCorpse.sqf"] call mf_compile;
 //fn_vehicleInit = [_serverFunc, "fn_vehicleInit.sqf"] call mf_compile;
+fn_vehSafeDistance = [_serverFunc, "fn_vehSafeDistance.sqf"] call mf_compile;
 getBallMagazine = [_serverFunc, "getBallMagazine.sqf"] call mf_compile;
 getFwdVelocity = [_serverFunc, "getFwdVelocity.sqf"] call mf_compile;
 getHitPoints = [_serverFunc, "getHitPoints.sqf"] call mf_compile;
 getMagAmmoCount = [_serverFunc, "getMagAmmoCount.sqf"] call mf_compile;
+getMagazineDetailAmmo = [_serverFunc, "getMagazineDetailAmmo.sqf"] call mf_compile;
 getMoveWeapon = [_clientFunc, "getMoveWeapon.sqf"] call mf_compile;
 fn_getPlayerData = "persistence\client\players\getPlayerData.sqf" call mf_compile;
 getPublicVar = [_serverFunc, "getPublicVar.sqf"] call mf_compile;

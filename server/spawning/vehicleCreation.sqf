@@ -83,13 +83,6 @@ if (_vehicleType isKindOf "Offroad_01_armed_base_F") then
 	reload _vehicle;
 };
 
-if (_vehicleType isKindOf "Helicopter_Base_F") then
-{
-	_vehicle addweapon "CMFlareLauncher";
-	_vehicle addmagazine "168Rnd_CMFlare_Chaff_Magazine";
-	reload _vehicle;
-};
-
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
 
-[_vehicle] call randomVehicleWeapons;
+[_vehicle] call randomWeapons;

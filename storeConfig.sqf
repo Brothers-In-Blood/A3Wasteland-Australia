@@ -13,6 +13,8 @@ currentOwnerName = "";
 // Gunstore Weapon List - Gun Store Base List
 // Text name, classname, buy cost
 
+// empty name = name is extracted from class config
+
 pistolArray = compileFinal str
 [
 	// Handguns
@@ -567,8 +569,8 @@ genItemArray = compileFinal str
 	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
 	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
 	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
-	["Remote Designator Bag (NATO) [DLC]", "B_Static_Designator_01_weapon_F", 1000, "backpack"],
-	["Remote Designator Bag (CSAT) [DLC]", "O_Static_Designator_02_weapon_F", 1000, "backpack"],
+	["Remote Designator Bag (NATO) [DLC]", "B_Static_Designator_01_weapon_F", 250, "backpack"],
+	["Remote Designator Bag (CSAT) [DLC]", "O_Static_Designator_02_weapon_F", 250, "backpack"],
 	["GPS", "ItemGPS", 100, "gps"],
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
@@ -578,7 +580,12 @@ genItemArray = compileFinal str
 	["Diving Goggles", "G_Diving", 100, "gogg"],
 	["Binoculars", "Binocular", 50, "binoc"],
 	["Rangefinder", "Rangefinder", 150, "binoc"],
-	["Laser Designator", "Laserdesignator", 1000, "binoc"],
+	["Laser Designator (NATO)", "Laserdesignator", 1000, "binoc", "WEST"],
+	["Laser Designator (CSAT)", "Laserdesignator_02", 1000, "binoc", "EAST"],
+	["Laser Designator (AAF)", "Laserdesignator_03", 1000, "binoc", "GUER"],
+	["IR Grenade (NATO)", "B_IR_Grenade", 50, "mag", "WEST"],
+	["IR Grenade (CSAT)", "O_IR_Grenade", 50, "mag", "EAST"],
+	["IR Grenade (AAF)", "I_IR_Grenade", 50, "mag", "GUER"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
@@ -759,11 +766,11 @@ planesArray = compileFinal str
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 45000, "vehicle"],
 	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 60000, "vehicle"],
 	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 60000, "vehicle"],
-	["MQ4A Greyhawk ATGM UAV", "B_UAV_02_F", 20000, "vehicle"],
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 10000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than ATGMs
-	["K40 Ababil-3 ATGM UAV (CSAT)", "O_UAV_02_F", 20000, "vehicle"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 20000, "vehicle"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 10000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
+	["K40 Ababil-3 Missile UAV (CSAT)", "O_UAV_02_F", 20000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 10000, "vehicle"],
-	["K40 Ababil-3 ATGM UAV (AAF)", "I_UAV_02_F", 20000, "vehicle"],
+	["K40 Ababil-3 Missile UAV (AAF)", "I_UAV_02_F", 20000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 10000, "vehicle"]
 ];
 
@@ -818,7 +825,7 @@ colorsArray = compileFinal str
 		"All",
 		[
 			["Black", _color + "(0.01,0.01,0.01,1)"], // #(argb,8,8,3)color(0.1,0.1,0.1,0.1)
-			["Grey", _color + "(0.15,0.151,0.152,1)"], // #(argb,8,8,3)color(0.5,0.51,0.512,0.3)
+			["Gray", _color + "(0.15,0.151,0.152,1)"], // #(argb,8,8,3)color(0.5,0.51,0.512,0.3)
 			["White", _color + "(0.75,0.75,0.75,1)"], // #(argb,8,8,3)color(1,1,1,0.5)
 			["Dark Blue", _color + "(0,0.05,0.15,1)"], // #(argb,8,8,3)color(0,0.3,0.6,0.05)
 			["Blue", _color + "(0,0.03,0.5,1)"], // #(argb,8,8,3)color(0,0.2,1,0.75)
@@ -829,22 +836,47 @@ colorsArray = compileFinal str
 			["Red", _color + "(0.45,0.005,0,1)"], // #(argb,8,8,3)color(1,0.1,0,0.3)
 			["Pink", _color + "(0.5,0.03,0.3,1)"], // #(argb,8,8,3)color(1,0.06,0.6,0.5)
 			["Purple", _color + "(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)
-			["NATO Tan", _texDir + "nato.jpg"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
-			["CSAT Brown", _texDir + "csat.jpg"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
-			["AAF Green", _texDir + "aaf.jpg"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
-			["Trippy", _texDir + "rainbow.jpg"],
-			["Carbon", _texDir + "carbon.jpg"],
-			["Rusty", _texDir + "rusty.jpg"],
-			["Denim", _texDir + "denim.jpg"],
-			["Psych", _texDir + "psych.jpg"],
-			["Leopard", _texDir + "leopard.jpg"],
-			["'Murica", _texDir + "murica.jpg"],
-			["Confederate", _texDir + "confederate.jpg"],
-			["Union Jack", _texDir + "unionjack.jpg"],
-			["Yellow Camo", _texDir + "camo_fuel.jpg"],
-			["Orange Camo", _texDir + "camo_fack.jpg"],
-			["Red Camo", _texDir + "camo_deser.jpg"],
-			["Pink Camo", _texDir + "camo_pank.jpg"]
+			["NATO Tan", _texDir + "nato.paa"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
+			["CSAT Brown", _texDir + "csat.paa"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
+			["AAF Green", _texDir + "aaf.paa"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
+			["Bloodshot", _texDir + "bloodshot.paa"],
+			["Carbon", _texDir + "carbon.paa"],
+			["Confederate", _texDir + "confederate.paa"],
+			["Denim", _texDir + "denim.paa"],
+			["Digital", _texDir + "digi.paa"],
+			["Digital Black", _texDir + "digi_black.paa"],
+			["Digital Desert", _texDir + "digi_desert.paa"],
+			["Digital Woodland", _texDir + "digi_wood.paa"],
+			["Doritos", _texDir + "doritos.paa"],
+			["Drylands", _texDir + "drylands.paa"],
+			["Hello Kitty", _texDir + "hellokitty.paa"],
+			["Hex", _texDir + "hex.paa"],
+			["Hippie", _texDir + "hippie.paa"],
+			["ISIS", _texDir + "isis.paa"],
+			["Leopard", _texDir + "leopard.paa"],
+			["Mountain Dew", _texDir + "mtndew.paa"],
+			["'Murica", _texDir + "murica.paa"],
+			["Nazi", _texDir + "nazi.paa"],
+			["Orange Camo", _texDir + "camo_orange.paa"],
+			["Pink Camo", _texDir + "camo_pink.paa"],
+			["Pride", _texDir + "pride.paa"],
+			["Psych", _texDir + "psych.paa"],
+			["Red Camo", _texDir + "camo_red.paa"],
+			["Rusty", _texDir + "rusty.paa"],
+			["Sand", _texDir + "sand.paa"],
+			["Snake", _texDir + "snake.paa"],
+			["Stripes", _texDir + "stripes.paa"],
+			["Stripes 2", _texDir + "stripes2.paa"],
+			["Stripes 3", _texDir + "stripes3.paa"],
+			["Swamp", _texDir + "swamp.paa"],
+			["Tiger", _texDir + "tiger.paa"],
+			["Trippy", _texDir + "rainbow.paa"],
+			["Union Jack", _texDir + "unionjack.paa"],
+			["Urban", _texDir + "urban.paa"],
+			["Weed", _texDir + "weed.paa"],
+			["Woodland", _texDir + "woodland.paa"],
+			["Woodland Dark", _texDir + "wooddark.paa"],
+			["Woodland Tiger", _texDir + "woodtiger.paa"]
 		]
 	],
 	[ // Kart colors
@@ -932,11 +964,11 @@ customPlayerItems = compileFinal str
 	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
-	//["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 1500, 750],
-	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100]
-	//["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
-	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
-	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
+	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 1500, 750],
+	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
+	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
+	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
+	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";

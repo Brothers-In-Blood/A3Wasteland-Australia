@@ -4,12 +4,6 @@
 //	@file Name: clientCompile.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, [GoT] JoSchaap, MercyfulFate, AgentRev
 //	@file Args:
-//
-// Update: Motavar@judgement.net
-// Port: A3Wasteland 
-// Radar Vehicle
-// Date: 4/5/15
-// 
 
 mf_notify_client = "client\functions\notifyClient.sqf" call mf_compile;
 mf_util_playUntil = "client\functions\playUntil.sqf" call mf_compile;
@@ -42,6 +36,7 @@ fn_removeAllManagedActions = "client\functions\fn_removeAllManagedActions.sqf" c
 fn_removeManagedAction = "client\functions\fn_removeManagedAction.sqf" call mf_compile;
 fn_forceOpenParachute = "client\functions\fn_forceOpenParachute.sqf" call mf_compile;
 fn_openParachute = "client\functions\fn_openParachute.sqf" call mf_compile;
+fn_voiceChatControl = "client\functions\fn_voiceChatControl.sqf" call mf_compile;
 getDefaultClothing = "client\functions\getDefaultClothing.sqf" call mf_compile;
 getFullMove = "client\functions\getFullMove.sqf" call mf_compile;
 getMoveParams = "client\functions\getMoveParams.sqf" call mf_compile;
@@ -62,7 +57,6 @@ weaponDisassembledEvent = "client\functions\weaponDisassembledEvent.sqf" call mf
 
 // Player details and actions
 loadPlayerMenu = "client\systems\playerMenu\init.sqf" call mf_compile;
-playerCustomUniform = "client\functions\playerCustomUniform.sqf" call mf_compile;
 playerSpawn = "client\functions\playerSpawn.sqf" call mf_compile;
 playerSetup = "client\functions\playerSetup.sqf" call mf_compile;
 playerSetupStart = "client\functions\playerSetupStart.sqf" call mf_compile;
@@ -76,15 +70,11 @@ spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
 // refuelVehicle = "client\systems\playerMenu\refuel.sqf" call mf_compile;
 // repairVehicle = "client\systems\playerMenu\repair.sqf" call mf_compile;
 
-//AJ Functions
-fn_cameracheck = "addons\cameracheck\cameracheck.sqf" call mf_compile;
-
 // Sync client with server time
 timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;
 
 // Update scripts
 updateTeamKiller = "client\functions\updateTeamKiller.sqf" call mf_compile;
-updateRadarMarkers = "client\functions\UpdatePlayerRadarMarkers.sqf" call mf_compile;
 
 // Team-kill system
 teamkillAction = "client\functions\doTeamKillAction.sqf" call mf_compile;

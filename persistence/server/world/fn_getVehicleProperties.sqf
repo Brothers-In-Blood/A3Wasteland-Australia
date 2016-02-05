@@ -4,7 +4,7 @@
 //	@file Name: fn_getVehicleProperties.sqf
 //	@file Author: AgentRev
 
-private ["_veh", "_flying", "_class", "_purchasedVehicle", "_missionVehicle", "_pos", "_dir", "_vel", "_fuel", "_damage", "_hitPoints", "_variables", "_owner", "_doubleBSlash", "_textures", "_tex", "_texArr", "_weapons", "_magazines", "_items", "_backpacks", "_turretMags", "_turretMags2", "_turretMags3", "_hasDoorGuns", "_turrets", "_path", "_ammoCargo", "_fuelCargo", "_repairCargo", "_props"];
+private ["_veh", "_flying", "_class", "_purchasedVehicle", "_missionVehicle", "_pos", "_dir", "_vel", "_fuel", "_damage", "_hitPoints", "_hpDamage", "_variables", "_owner", "_doubleBSlash", "_textures", "_tex", "_texArr", "_weapons", "_magazines", "_items", "_backpacks", "_turretMags", "_turretMags2", "_turretMags3", "_hasDoorGuns", "_turrets", "_path", "_ammoCargo", "_fuelCargo", "_repairCargo", "_props"];
 
 _veh = _this select 0;
 _flying = if (count _this > 1) then { _this select 1 } else { false };
@@ -20,20 +20,13 @@ _vel = velocity _veh;
 _fuel = fuel _veh;
 _damage = damage _veh;
 _hitPoints = [];
+_hpDamage = getAllHitPointsDamage _veh;
 
 {
-	_hitPoint = configName _x;
-	_hitPoints set [count _hitPoints, [_hitPoint, _veh getHitPointDamage _hitPoint]];
-} forEach (_class call getHitPoints);
+	_hitPoints pushBack [_x, (_hpDamage select 2) select _forEachIndex];
+} forEach (_hpDamage select 0);
 
 _variables = [];
-
-_owner = _veh getVariable ["ownerUID", ""];
-
-if !(_owner in ["","0"]) then
-{
-	_variables pushBack ["ownerUID", _owner];
-};
 
 switch (true) do
 {
@@ -47,6 +40,8 @@ switch (true) do
 	};
 };
 
+_owner = _veh getVariable ["ownerUID", ""];
+
 _doubleBSlash = (call A3W_savingMethod == "extDB");
 
 _textures = [];
@@ -55,18 +50,7 @@ _textures = [];
 
 	if (_doubleBSlash) then
 	{
-		_texArr = [];
-
-		{
-			_texArr pushBack _x;
-
-			if (_x == 92) then // backslash
-			{
-				_texArr pushBack 92; // double it
-			};
-		} forEach toArray _tex;
-
-		_tex = toString _texArr;
+		_tex = (_tex splitString "\") joinString "\\";
 	};
 
 	[_textures, _tex, [_x select 0]] call fn_addToPairs;
@@ -147,6 +131,7 @@ _props =
 	["Fuel", _fuel],
 	["Damage", _damage],
 	["HitPoints", _hitPoints],
+	["OwnerUID", _owner],
 	["Variables", _variables],
 	["Textures", _textures],
 

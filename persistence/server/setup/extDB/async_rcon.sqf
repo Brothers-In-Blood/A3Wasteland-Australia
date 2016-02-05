@@ -17,9 +17,9 @@ private["_queryStmt","_queryResult","_key","_mode","_return","_loop"];
 
 _tickTime = diag_tickTime;
 
-_queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
-_mode = [_this,1,1,[0]] call BIS_fnc_param;
-_multiarr = [_this,2,false,[false]] call BIS_fnc_param;
+_queryStmt = param [0,"",[""]];
+_mode = param [1,1,[0]];
+_multiarr = param [2,false,[false]];
 
 _key = "extDB2" callExtension format["%1:%2:%3",_mode, (call A3W_extDB_rconID), _queryStmt];
 
@@ -60,11 +60,11 @@ while{_loop} do
 _queryResult = call compile _queryResult;
 
 // Not needed, its SQF Code incase extDB ever returns error message i.e Database Died
-if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["extDB2: Protocol Error: %1", _queryResult]; []};
+if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["[extDB2] ███ Protocol Error: %1", _queryResult]; []};
 _return = (_queryResult select 1);
 
 if(!_multiarr) then {
-	_return = _return select 0;
+	_return = if (count _return > 0) then { _return select 0 } else { [] };
 };
 
 _return;

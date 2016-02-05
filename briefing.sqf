@@ -5,11 +5,59 @@
 
 if (!hasInterface) exitWith {};
 
+_trimName = { _this select [1, count _this - 2] };
+_aKeyName = { _arr = actionKeysNamesArray _this; if (count _arr == 0) exitWith {"<UNDEFINED>"}; _arr select 0 };
+
+#define NKEYNAME(DIK) (keyName DIK call _trimName)
+#define AKEYNAME(ACT) (ACT call _aKeyName)
+
 waitUntil {!isNull player};
 
 player createDiarySubject ["infos", "Infos and Help"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
+
+player createDiaryRecord ["changelog",
+[
+"v1.2",
+"
+<br/>[Added] Mag Repack by Outlawled (Ctrl + " + NKEYNAME(19) + ")
+<br/>[Added] Adjustable NV by xx-LSD-xx (Shift + PageUp/Down)
+<br/>[Added] New vehicle store paintjobs
+<br/>[Added] Town spawn cooldown
+<br/>[Added] Ghosting timer
+<br/>[Added] Object lock restriction near stores and missions
+<br/>[Added] Headless client object saving
+<br/>[Added] Time and weather saving
+<br/>[Changed] Expanded UAV control restriction to quadcopters
+<br/>[Changed] Injured players no longer count as town enemies
+<br/>[Changed] Upgraded extDB to extDB2 by Torndeco
+<br/>[Changed] Updated antihack
+<br/>[Fixed] Old spawn beacons no longer shown on spawn menu
+<br/>[Fixed] Multiple money duping exploits
+<br/>[Fixed] Vehicles and objects sometimes disappearing from DB
+<br/>[Fixed] Severe injuries caused by jumping over small ledges
+<br/>[Fixed] Antihack kicks due to RHS, MCC, AGM, ACE3, ALiVE
+<br/>[Fixed] Various minor bugfixes and optimizations
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
+"v1.1b",
+"
+<br/>[Added] Marksmen DLC content
+<br/>[Added] Prevent usage of commander camera
+<br/>[Added] Emergency eject hotkey (Ctrl + " + AKEYNAME("GetOut") + ")
+<br/>[Added] Restricted UAV connection to owner's group
+<br/>[Changed] Improved purchased vehicle setup time
+<br/>[Changed] Admins can now use global voice chat
+<br/>[Changed] Updated antihack
+<br/>[Fixed] Corpses not being ejected from vehicles
+<br/>[Fixed] Thermal imaging not working for UAVs
+<br/>[Fixed] Various minor bugfixes and optimizations
+"
+]];
 
 player createDiaryRecord ["changelog",
 [
@@ -47,7 +95,7 @@ player createDiaryRecord ["changelog",
 <br/>[Changed] Spawn beacon item drop to sleeping bag
 <br/>[Fixed] More money exploits
 <br/>[Fixed] Scoreboard ordering
-<br/>[Fixed] Vehicle repair & refuel sometimes not working
+<br/>[Fixed] Vehicle repair and refuel sometimes not working
 <br/>[Fixed] Injured players' corpses being deleted on disconnect
 <br/>[Fixed] Static weapon disassembly prevention
 <br/>[Fixed] Excess bought rockets ending up in uniform or vest
@@ -100,7 +148,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9h",
+"v0.9h",
 "
 <br/>[Added] Custom revive system based on Farooq's Revive
 <br/>[Added] Territory payroll at regular intervals
@@ -160,55 +208,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9gh",
-"
-<br/> 10/01/2014
-<br/> [Community update] Base building features tweaked
-<br/> [Added] Base objects - Land Piers
-<br/> [Added] Base objects - Fuel Pumps
-<br/> [Added] Mag Repack by Outlawled
-<br/> 
-<br/> 09/22/2014
-<br/> [Merge] A3Wasteland - 964 commits
-<br/>
-<br/>
-<br/> 09/14/2014
-<br/> 
-<br/> [Changed] Island and Ghost Hotel to Selakano and Kore
-<br/> [Added] Town spawn Kore, Selakano, Panagia
-<br/> [Merge] A3Wasteland - 960 commits 
-<br/>
-<br/> 09/11/2014
-<br/> [Removed] Ammo Trunks
-<br/> [Added] Resupply Trunk - Mobile resupply truck, resupply cost is pulled from Bank.
-<br/>
-<br/> 09/05/2014 
-<br/> [Removed] UAV Terminal, unable to get out of vehicle.
-<br/> [Added] New Money Shipment Missions. 
-<br/> [Added] Vehicle Store north of Kavala - Power Plant area.
-<br/> [Fixed] Money values display correctly over 1 Mil.
-<br/> [Changed] Resupply cost is 25% of cost of vehicle - pulls cost from storeconfig. 
-<br/> [Fixed] deletePlayerData to deletePlayerSave - Money lost glitch in heli.
-<br/> 
-<br/> 08/09/2014 - 1pm
-<br/> [Added] Vehicle Lock once Vehicle Saved.
-<br/> 
-<br/> 08/08/2014 - 10pm
-<br/> [Fixed] Bank Money (ATM) deletes on death.
-<br/> [Added] ALL helicopters come with flares. 
-<br/> [Changed] - Helicopter price increase.
-<br/> 
-<br/> 07/28/2014 - 11am
-<br/> [Changed] - Altis Airport Conquest Territories - $15,000 Payout
-<br/> [Changed] - Able to tow or lift any vehicle with all vehicles. 
-<br/> [Added] - Server Cleanup process - FPS boost
-<br/> 
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9g",
+"v0.9g",
 "
 <br/>[Added] - Vehicle stores
 <br/>[Added] - New lootspawner by Na_Palm, stuff in ALL buildings
@@ -250,7 +250,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9f",
+"v0.9f",
 "
 <br/>[Added] - Money missions
 <br/>[Added] - Sell Crate Items option at stores when moving crate
@@ -265,7 +265,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9e",
+"v0.9e",
 "
 <br/>[Added] - Territory system
 <br/>[Added] - Jumping option (step over while running)
@@ -279,7 +279,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9d",
+"v0.9d",
 "
 <br/>[Added] - Store object purchases
 <br/>[Changed] - New UI by KoS
@@ -288,7 +288,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9c",
+"v0.9c",
 "
 <br/>[Changed] - Instant money pickup and drop
 <br/>[Changed] - Increased plane and heli spawning odds
@@ -299,7 +299,7 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
-"0.9b",
+"v0.9b",
 "
 <br/>[Initial release] - Welcome to Altis!
 "
@@ -340,15 +340,19 @@ player createDiaryRecord ["credits",
 <br/>	* Das Attorney (Jump MF)
 <br/>	* Ed! (404Games forums)
 <br/>	* Farooq (GitHub)
+<br/>	* gtoddc (A3W forums)
 <br/>	* HatchetHarry (GitHub)
 <br/>	* Hub (TeamPlayerGaming)
 <br/>	* k4n30 (GitHub)
+<br/>	* Killzone_Kid (KillzoneKid.com)
 <br/>	* Krunch (GitHub)
+<br/>	* LouDnl (GitHub)
 <br/>	* madbull (R3F)
 <br/>	* Mainfrezzer (Magnon)
 <br/>	* meat147 (GitHub)
 <br/>	* micovery (GitHub)
 <br/>	* Na_Palm (BIS forums)
+<br/>	* Outlawled (Armaholic)
 <br/>	* red281gt (GitHub)
 <br/>	* RockHound (BierAG)
 <br/>	* s3kShUn61 (GitHub)
@@ -361,6 +365,7 @@ player createDiaryRecord ["credits",
 <br/>	* spunFIN (BIS forums)
 <br/>	* Tonic (BIS forums)
 <br/>	* wiking.at (A3W forums)
+<br/>	* xx-LSD-xx (Armaholic)
 <br/>	* Zenophon (BIS Forums)
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
@@ -368,21 +373,64 @@ player createDiaryRecord ["credits",
 ]];
 
 
+_WASD = AKEYNAME("MoveForward") + "," + AKEYNAME("MoveBack") + "," + AKEYNAME("TurnLeft") + "," + AKEYNAME("TurnRight");
+
+player createDiaryRecord ["infos",
+[
+"Admin Spectate keys",
+"
+<br/>Admin menu Spectate camera controls:
+<br/>
+<br/>Shift + " + AKEYNAME("NextChannel") + " (next player)
+<br/>Shift + " + AKEYNAME("PrevChannel") + " (previous player)
+<br/>Ctrl + " + NKEYNAME(18) + " (exit camera)
+<br/>Ctrl + " + AKEYNAME("Chat") + " (attach/detach camera from target)
+<br/>Ctrl + " + NKEYNAME(35) + " (toggle target HUD)
+<br/>" + AKEYNAME("NightVision") + " (nightvision, thermal)
+<br/>" + _WASD + " (move camera around)
+<br/>" + NKEYNAME(16) + " (move camera up)
+<br/>" + NKEYNAME(44) + " (move camera down)
+<br/>Mouse Move (rotate camera)
+<br/>Mouse Wheel Up (increase camera speed)
+<br/>Mouse Wheel Down (decrease camera speed)
+<br/>Shift + " + _WASD + " (move camera around faster)
+<br/>" + AKEYNAME("ShowMap") + " (open/close map - click on map to teleport camera)
+"
+]];
+
+player createDiaryRecord ["infos",
+[
+"Player hotkeys",
+"
+<br/>List of player hotkeys and functions:
+<br/>
+<br/>" + NKEYNAME(41) + " (open player menu)
+<br/>" + NKEYNAME(207) + " (toggle earplugs)
+<br/>" + NKEYNAME(199) + ", " + NKEYNAME(219) + ", " + NKEYNAME(220) + " (toggle player names)
+<br/>Ctrl + " + AKEYNAME("GetOut") + " (emergency eject)
+<br/>" + AKEYNAME("GetOver") + " (open parachute)
+<br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (adjust nightvision)
+<br/>" + NKEYNAME(22) + " (admin menu)
+"
+]];
+
 player createDiaryRecord ["infos",
 [
 "Hints and Tips",
 "
-<br/><font size='18'>TOP Wasteland</font>
+<br/><font size='18'>A3Wasteland</font>
 <br/>
+<br/>* At the start of the game, spread out and find supplies before worrying about where to establish a meeting place or a base, supplies are important and very valuable.
 <br/>
-<br/>* Loot spawns in vehicles or purchased from the Gun Store.
-<br/>* Base items can be purchased from General Store, no base loot will be spawned in server. 
-<br/>* Use ATM to save your money, in the event that you are killed, it will be safe.
-<br/>* Planes are spawned, not able for purchase. Planes cannot be saved.
-<br/>* Vehicles can be saved, use action item to Save Vehicle before log off or after moving it. 
-<br/>* Base items need to be locked for save. Spawn beacon save automatically on restart.
-<br/>* Conquest territories, $15,000 pay out. 
-<br/>* AI are set to Hard.
+<br/>* When picking a base location, it is best advised to pick a place that is out of the way and not so obvious such as airports, cities, map-bound bases, etc. remember, players randomly spawn in and around towns and could even spawn inside your base should you set it up in a town.
+<br/>
+<br/>* If you spawn in an area with no vehicles or supplies in the immediate area, DO NOT just click respawn from the pause menu, chances are if you search an area of a few hundred meters, you will find something.
+<br/>
+<br/>* Always be on the lookout for nightvision. they are located in the ammo crates, and there are pairs scattered throughout vehicles. You can also purchase them from the gunstores. Nighttime without them SUCKS, and if you have them, you can conduct stealth raids on enemy bases under the cover of complete darkness.
+<br/>
+<br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
+<br/>
+<br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
 "
 ]];
 

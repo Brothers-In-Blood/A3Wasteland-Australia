@@ -24,7 +24,7 @@ class Mission
 	randomSeed=5489908;
 	class Intel
 	{
-		briefingName="ArmA3_Wasteland - Australia by Motavar v1.0";
+		briefingName="ArmA3_Wasteland - Australia v0.1";
 		resistanceWest=0;
 		startWeather=0.099999994;
 		startWind=0.099999994;
@@ -2101,7 +2101,7 @@ class Mission
 		items=102;
 		class Item0
 		{
-			position[]={36646.621,4.4355869,12103.951};
+			position[]={36546.164,4.4000001,12153.159};
 			name="Town_2";
 			type="Empty";
 			colorName="ColorRed";
@@ -2159,7 +2159,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={36606.711,4.4137111,12926.312};
+			position[]={36605.813,4.4135003,12921.461};
 			name="Town_1";
 			type="Empty";
 			colorName="ColorRed";
@@ -2243,7 +2243,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={34905.074,14.641062,11717.698};
+			position[]={21159.76,22.2276,32899.988};
 			name="Mission_1";
 			type="Empty";
 			colorName="ColorOrange";
@@ -2310,7 +2310,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={29984.541,27.331657,17415.322};
+			position[]={15107.877,44.011734,22510.529};
 			name="Mission_3";
 			type="Empty";
 			colorName="ColorOrange";
@@ -2463,14 +2463,14 @@ class Mission
 		};
 		class Item50
 		{
-			position[]={35078.801,5.5681229,17992.715};
+			position[]={35206.035,35.408661,19202.375};
 			name="Mission_4";
 			type="Empty";
 			colorName="ColorOrange";
 		};
 		class Item51
 		{
-			position[]={36723.973,144.3989,14387.918};
+			position[]={27467.037,25.525217,23861.412};
 			name="Mission_5";
 			type="Empty";
 			colorName="ColorOrange";
@@ -2543,7 +2543,7 @@ class Mission
 		};
 		class Item61
 		{
-			position[]={29444.752,0.088378698,11213.076};
+			position[]={11916.327,-0.55345207,20692.422};
 			name="SunkenMission_2";
 			type="Empty";
 			colorName="ColorWhite";
@@ -2551,7 +2551,7 @@ class Mission
 		};
 		class Item62
 		{
-			position[]={35524.328,0.00040110957,12919.409};
+			position[]={26331.549,0.050214946,29844.629};
 			name="SunkenMission_3";
 			type="Empty";
 			colorName="ColorWhite";
@@ -2566,7 +2566,7 @@ class Mission
 		};
 		class Item64
 		{
-			position[]={26157.049,8.1836958,11009.783};
+			position[]={26215.637,8.1828003,11029.749};
 			name="Town_11";
 			type="Empty";
 			colorName="ColorRed";
@@ -2587,77 +2587,77 @@ class Mission
 		};
 		class Item67
 		{
-			position[]={5626.9658,12.420962,18500.729};
+			position[]={5598.3774,12.893401,18520.371};
 			name="Town_13";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item68
 		{
-			position[]={6908.5313,7.3837967,18124.602};
+			position[]={6904.4668,7.3837967,18142.893};
 			name="Town_12";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item69
 		{
-			position[]={22236.676,13.871477,19292.361};
+			position[]={22245.355,13.871477,19265.184};
 			name="Town_14";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item70
 		{
-			position[]={19728.123,18.31325,24200.943};
+			position[]={19732.982,18.317911,24181.094};
 			name="Town_15";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item71
 		{
-			position[]={22095.498,16.947031,25598.305};
+			position[]={22101.434,16.947031,25571.453};
 			name="Town_16";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item72
 		{
-			position[]={28460.465,6.855617,35180.32};
+			position[]={28448.715,6.8726029,35189.637};
 			name="Town_7";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item73
 		{
-			position[]={32133.77,5.2507896,29817.305};
+			position[]={32133.51,5.2507896,29819.365};
 			name="Town_17";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item74
 		{
-			position[]={34918.039,7.3014302,26136.494};
+			position[]={34915.984,7.3014302,26136.723};
 			name="Town_18";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item75
 		{
-			position[]={31722.336,197.94586,25035.234};
+			position[]={31721.92,197.94586,24988.633};
 			name="Town_19";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item76
 		{
-			position[]={16254.076,7.9736924,33610.395};
+			position[]={16285.701,7.97366,33613.723};
 			name="Town_20";
 			type="Empty";
 			colorName="ColorRed";
 		};
 		class Item77
 		{
-			position[]={16881.152,8.5,33932.645};
+			position[]={17023.916,8.5,33842.027};
 			name="Town_22";
 			type="Empty";
 			colorName="ColorRed";
