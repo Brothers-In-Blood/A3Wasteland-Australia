@@ -2862,7 +2862,7 @@ class Mission
 		class Item97
 		{
 			position[]={25323.471,7.4310384,12726.333};
-			name="TERRITORY_5_ADELAIDE_A";
+			name="TERRITORY_6_ADELAIDE_A";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";

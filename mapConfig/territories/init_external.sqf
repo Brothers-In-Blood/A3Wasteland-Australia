@@ -1,6 +1,8 @@
-#include "00_cherno.sqf";
-#include "01_berezino.sqf";
-#include "02_nwaf.sqf";
-#include "03_elektro.sqf";
-#include "04_blacklake.sqf";
-#include "05_sobor.sqf";
+#include "00_perth.sqf";
+#include "01_darwin.sqf";
+#include "02_leonara.sqf";
+#include "03_eyre.sqf";
+#include "04_weipa.sqf";
+#include "05_tasmania.sqf";
+#include "06_adelaide.sqf";
+#include "07_alice.sqf";
