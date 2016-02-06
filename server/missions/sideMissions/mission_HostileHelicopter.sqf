@@ -21,11 +21,11 @@ _setupObjects =
 
 	_vehicleClass = if (missionDifficultyHard) then
 	{
-		["B_Heli_Attack_01_F", "O_Heli_Attack_02_black_F"] call BIS_fnc_selectRandom;
+		["RHS_Mi24V_AT_vvs", "RHS_AH1Z"] call BIS_fnc_selectRandom;
 	}
 	else
 	{
-		["B_Heli_Light_01_armed_F", "O_Heli_Light_02_F", "I_Heli_light_03_F"] call BIS_fnc_selectRandom;
+		["RHS_UH1Y", "RHS_UH60M"] call BIS_fnc_selectRandom;
 	};
 
 	_createVehicle =
@@ -50,7 +50,7 @@ _setupObjects =
 
 		switch (true) do
 		{
-			case (_type isKindOf "Heli_Transport_01_base_F"):
+			case (_type isKindOf "RHS_UH60M"):
 			{
 				// these choppers have 2 turrets so we need 2 gunners
 				_soldier = [_aiGroup, _position] call createRandomSoldierC;
@@ -60,7 +60,7 @@ _setupObjects =
 				_soldier moveInTurret [_vehicle, [2]];
 			};
 
-			case (_type isKindOf "Heli_Attack_01_base_F" || _type isKindOf "Heli_Attack_02_base_F"):
+			case (_type isKindOf "RHS_AH1Z" || _type isKindOf "RHS_Mi24V_AT_vvs"):
 			{
 				// these choppers need 1 gunner
 				_soldier = [_aiGroup, _position] call createRandomSoldierC;

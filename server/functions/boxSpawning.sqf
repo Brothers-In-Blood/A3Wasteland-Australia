@@ -48,27 +48,27 @@ _boxList =
 					{
 						_boxItems =
 						[
-							["wep", "arifle_MX_F", 5, 4],
-							["wep", "arifle_MX_SW_F", 2, 4],
-							["wep", "SMG_01_F", 1, 5] // Vermin
+							["wep", "rhs_weap_m16a4", 5, 4],
+							["wep", "rhs_weap_m249_pip_L", 2, 4],
+							["wep", "rhs_weap_m4", 1, 5] // Vermin
 						]
 					};
 					case (_box isKindOf "Box_East_Wps_F"):
 					{
 						_boxItems =
 						[
-							["wep", "arifle_Katiba_F", 5, 4],
-							["wep", "LMG_Zafir_F", 2, 4],
-							["wep", "SMG_02_F", 1, 5] // Sting
+							["wep", "rhs_weap_ak104", 5, 4],
+							["wep", "rhs_weap_ak74m", 2, 4],
+							["wep", "rhs_weap_ak74m", 1, 5] // Sting
 						]
 					};
 					case (_box isKindOf "Box_IND_Wps_F"):
 					{
 						_boxItems =
 						[
-							["wep", "arifle_Mk20_F", 5, 4],
-							["wep", "LMG_Mk200_F", 2, 4],
-							["wep", "hgun_PDW2000_F", 1, 5]
+							["wep", "rhs_weap_ak74m", 5, 4],
+							["wep", "rhs_weap_pkm", 2, 4],
+							["wep", "rhs_weap_ak74m", 1, 5]
 						]
 					};
 					default { _boxItems = [] };
@@ -79,8 +79,8 @@ _boxList =
 				// Extra loadout
 				_boxItems =
 				[
-					["wep", "hgun_Pistol_heavy_01_F", 1, 5],
-					["mag", "9Rnd_45ACP_Mag", 5]
+					["wep", "rhsusf_weap_m1911a1", 1, 5],
+					["mag", "rhsusf_mag_7x45acp_MHP", 5]
 				];
 
 				[_box, _boxItems] call processItems;
@@ -96,24 +96,24 @@ _boxList =
 					{
 						_boxItems =
 						[
-							["wep", "arifle_MXM_DMS_F", 1, 8],
-							["wep", "srifle_LRR_LRPS_F", 1, 8]
+							["wep", "rhs_weap_sr25_ec", 1, 8],
+							["wep", "rhs_weap_XM2010", 1, 8]
 						];
 					};
 					case (_box isKindOf "Box_East_WpsSpecial_F"):
 					{
 						_boxItems =
 						[
-							["wep", "srifle_DMR_01_DMS_F", 1, 8],
-							["wep", "srifle_GM6_LRPS_F", 1, 8]
+							["wep", "rhs_weap_svdp", 1, 8],
+							["wep", "rhs_weap_pkp", 1, 8]
 						];
 					};
 					case (_box isKindOf "Box_IND_WpsSpecial_F"):
 					{
 						_boxItems =
 						[
-							["wep", "srifle_EBR_DMS_F", 1, 8],
-							["wep", "srifle_GM6_LRPS_F", 1, 8]
+							["wep", "rhs_weap_svdp", 1, 8],
+							["wep", "rhs_weap_pkp", 1, 8]
 						];
 					};
 					default { _boxItems = [] };
@@ -124,8 +124,8 @@ _boxList =
 				// Extra loadout
 				_boxItems =
 				[
-					["wep", "arifle_SDAR_F", 1, 4], // SDAR + 4 underwater mags
-					["mag", "30Rnd_556x45_Stanag", 4] // 4 normal mags
+					["wep", "rhs_weap_M590_8RD", 1, 4], // SDAR + 4 underwater mags
+					["mag", "rhsusf_8Rnd_00Buck", 4] // 4 normal mags
 				];
 
 				[_box, _boxItems] call processItems;

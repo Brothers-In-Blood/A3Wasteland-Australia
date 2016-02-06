@@ -25,16 +25,16 @@ _setupObjects =
 
 	_vehChoices =
 	[
-		["B_Boat_Armed_01_minigun_F", "B_Heli_Transport_01_F"],
-		["O_Boat_Armed_01_hmg_F", "O_Heli_Light_02_F"],
-		["I_Boat_Armed_01_minigun_F", "I_Heli_light_03_F"]
+		["B_Boat_Armed_01_minigun_F", "RHS_UH1Y"],
+		["O_Boat_Armed_01_hmg_F", "RHS_UH60M"],
+		["I_Boat_Armed_01_minigun_F", "RHS_Mi8MTV3_vvsc"]
 	];
 
 	if (missionDifficultyHard) then
 	{
-		(_vehChoices select 0) set [1, "B_Heli_Attack_01_F"];
-		(_vehChoices select 1) set [1, "O_Heli_Attack_02_F"];
-		(_vehChoices select 2) set [1, "O_Heli_Attack_02_black_F"];
+		(_vehChoices select 0) set [1, "RHS_Mi24V_AT_vvs"];
+		(_vehChoices select 1) set [1, "RHS_AH1Z"];
+		(_vehChoices select 2) set [1, "RHS_AH64D"];
 	};
 
 	_convoyVeh = _vehChoices call BIS_fnc_selectRandom;
@@ -79,7 +79,7 @@ _setupObjects =
 				_soldier moveInTurret [_vehicle, [1]]; // rear gunner
 			};
 
-			case (_type isKindOf "Heli_Transport_01_base_F"):
+			case (_type isKindOf "RHS_UH60M"):
 			{
 				// these choppers have 2 turrets so we need 2 gunners
 				_soldier = [_aiGroup, _position] call createRandomSoldierC;
@@ -89,7 +89,7 @@ _setupObjects =
 				_soldier moveInTurret [_vehicle, [2]];
 			};
 
-			case (_type isKindOf "Heli_Attack_01_base_F" || _type isKindOf "Heli_Attack_02_base_F"):
+			case (_type isKindOf "RHS_AH1Z" || _type isKindOf "RHS_AH64D" || _type isKindOf "RHS_Mi24V_AT_vvs"):
 			{
 				// these choppers need 1 gunner
 				_soldier = [_aiGroup, _position] call createRandomSoldierC;
