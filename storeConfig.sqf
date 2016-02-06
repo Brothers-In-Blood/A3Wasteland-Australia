@@ -370,7 +370,7 @@ accessoriesArray = compileFinal str
 	["M145 ELCAN (ARD)", "rhsusf_acc_ELCAN_ard", 50, "item"],
 	["M2A1 GL Red Dot", "rhsusf_acc_M2A1", 50, "item"],
 	["EOTech 552", "rhsusf_acc_eotech_552", 50, "item"],
-	["Aimpoint CompM4", "rhsusf_acc_compm4, 50, "item"],
+	["Aimpoint CompM4", "rhsusf_acc_compm4", 50, "item"],
 	["Leupold Mk4 ER/T (3.5-10x)", "rhsusf_acc_LEUPOLDMK4", 50, "item"],
 	["Leupold Mk4 ER/T (6.5-20x)", "rhsusf_acc_LEUPOLDMK4_2", 50, "item"],
 	
