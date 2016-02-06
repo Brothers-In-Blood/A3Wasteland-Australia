@@ -35,7 +35,7 @@ smgArray = compileFinal str
 	
 	// Shotguns
 	["Mossberg 590 (Long)", "rhs_weap_M590_8RD", 100],
-	["Mossberg 590 (Breacher)", "rhs_weap_M590_5RD", 100]
+	["Mossberg 590 (Breacher)", "rhs_weap_M590_5RD", 100],
 	
 	// 6-shot Standalone Launcher
 	["M32 MGL", "rhs_weap_m32", 250]
