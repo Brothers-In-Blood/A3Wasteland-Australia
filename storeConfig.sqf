@@ -19,7 +19,7 @@ pistolArray = compileFinal str
 [
 	// Handguns
 	["M320 Handheld", "rhs_weap_M320", 200],
-	["Glock 17", "rhsusf_weap_glock17g4", 75],
+	["Glock 17 Gen4", "rhsusf_weap_glock17g4", 75],
 	["M1911A1", "rhsusf_weap_m1911a1", 75],
 	["Beretta M9", "rhsusf_weap_m9", 75],
 	["Makarov", "rhs_weap_makarov_pmm", 75],
@@ -361,51 +361,73 @@ ammoArray = compileFinal str
 //Text name, classname, buy cost, item class
 accessoriesArray = compileFinal str
 [
-	["Suppressor 9mm", "muzzle_snds_L", 50, "item"],
-	["Suppressor .45 ACP", "muzzle_snds_acp", 75, "item"],
-	["Suppressor 5.56mm", "muzzle_snds_M", 100, "item"],
-	["Suppressor 6.5mm", "muzzle_snds_H", 100, "item"],
-	["Suppressor 6.5mm LMG", "muzzle_snds_H_MG", 125, "item"],
-	["Suppressor 7.62mm", "muzzle_snds_B", 125, "item"],
-	["Suppressor .338 [DLC]", "muzzle_snds_338_black", 150, "item"],
-	["Suppressor .338 (Green) [DLC]", "muzzle_snds_338_green", 150, "item"],
-	["Suppressor .338 (Sand) [DLC]", "muzzle_snds_338_sand", 175, "item"],
-	["Suppressor 9.3mm [DLC]", "muzzle_snds_93mmg", 175, "item"],
-	["Suppressor 9.3mm (Tan) [DLC]", "muzzle_snds_93mmg_tan", 175, "item"],
-	["Bipod (NATO)", "bipod_01_F_blk", 250, "item"],
-	["Bipod (CSAT)", "bipod_02_F_blk", 250, "item"],
-	["Bipod (AAF)", "bipod_03_F_blk", 250, "item"],
-	["Bipod (MTP)", "bipod_01_F_mtp", 250, "item"],
-	["Bipod (Hex)", "bipod_02_F_hex", 250, "item"],
+	/* ----SCOPES---- */
+	// Rail Mounted
+	["Trijicon ACOG", "rhsusf_acc_ACOG_USMC", 50, "item"],
+	["Trijicon ACOG (ARD)", "rhsusf_acc_ACOG2_USMC", 50, "item"],
+	["Trijicon ACOG (ARD/Lens Cover)", "rhsusf_acc_ACOG3_USMC", 50, "item"],
+	["M145 ELCAN", "rhsusf_acc_ELCAN", 50, "item"],
+	["M145 ELCAN (ARD)", "rhsusf_acc_ELCAN_ard", 50, "item"],
+	["M2A1 GL Red Dot", "rhsusf_acc_M2A1", 50, "item"],
+	["EOTech 552", "rhsusf_acc_eotech_552", 50, "item"],
+	["Aimpoint CompM4", "rhsusf_acc_compm4, 50, "item"],
+	["Leupold Mk4 ER/T (3.5-10x)", "rhsusf_acc_LEUPOLDMK4", 50, "item"],
+	["Leupold Mk4 ER/T (6.5-20x)", "rhsusf_acc_LEUPOLDMK4_2", 50, "item"],
+	
+	// AK Style Side Mounted
+	["1P29 (4x)", "rhs_acc_1p29", 50, "item"],
+	["1P63 Red Dot", "rhs_acc_1p63", 50, "item"],
+	["1P78 (2.8x)", "rhs_acc_1p78", 50, "item"],
+	["1PN93-1 NV (4x)", "rhs_acc_1pn93_1", 50, "item"],
+	["1PN93-2 NV (4x)", "rhs_acc_1pn93_2", 50, "item"],
+	["EKP-1S-03 Kobra", "rhs_acc_ekp1", 50, "item"],
+	["PG0-7V (RPG-7 Sight)", "rhs_acc_pgo7v", 50, "item"],
+	["PK-AS Red Dot", "rhs_acc_pkas", 50, "item"],
+	["PSO-1M2 (4x)", "rhs_acc_pso1m2", 50, "item"],
+	["PSO-1M2 (4x)", "rhs_acc_pso1m2", 50, "item"],
+	["PSO-1M2-1 (4x)", "rhs_acc_pso1m21", 50, "item"],
+	
+	/* ----Rail Accessories---- */
+	// Lights & Lasers
+	["Zenitco 2DP Light", "rhs_acc_2dpZenit", 50, "item"],
+	["PEQ-15 IR Laser/Surefire M952V (Tan)", "rhsusf_acc_anpeq15side", 50, "item"],
+	["PEQ-15A IR Laser", "rhsusf_acc_anpeq15A", 50, "item"],
+	["FLR-IV Light", "acc_flashlight", 50, "item"],
+	
+	/* ----Muzzle Devices---- */
+	// AK74
+	["DPM-AK-5 Flash Suppressor", "rhs_acc_ak5", 50, "item"],
+	["DTK Muzzle Brake", "rhs_acc_dtk", 50, "item"],
+	["DTK-1 Muzzle Brake", "rhs_acc_dtk1", 50, "item"],
+	["DTK-3 Muzzle Brake", "rhs_acc_dtk3", 50, "item"],
+	["DTK-4 Sound Suppressor", "rhs_acc_dtk4short", 50, "item"],
+	["TGP-A Sound Suppressor", "rhs_acc_tgpa", 50, "item"],
+	
+	// AK47
+	["DTK-4 Sound Suppressor", "rhs_acc_dtk4long", 50, "item"],
+	["DTK-4 Sound Suppressor (Taped)", "rhs_acc_dtk4screws", 50, "item"],
+	["PBS-1 Sound Suppressor", "rhs_acc_pbs1", 50, "item"],
+	["PG-S64 Flash Suppressor", "rhs_acc_pgs64", 50, "item"],
+	
+	// SR-25, M16, M4
+	["SR-25 7.62 Sound Suppressor", "rhsusf_acc_SR25S", 50, "item"],
+	["KAC NT4 Sound Suppressor", "rhsusf_acc_nt4_black", 50, "item"],
+	["KAC NT4 Sound Suppressor (Tan)", "rhsusf_acc_nt4_tan", 50, "item"],
+	["Rotex 5 Sound Suppressor", "rhsusf_acc_rotex5_grey", 50, "item"],
+	["Rotex 5 Sound Suppressor (Desert)", "rhsusf_acc_rotex5_tan", 50, "item"],
+	["Surefire SF3P Flash Suppressor", "rhsusf_acc_SF3P556", 50, "item"],
+	["Surefire SFMB Muzzle Brake", "rhsusf_acc_SFMB556", 50, "item"],
+	
+	// M2010
+	["AAC TITAN .300WM Sound Suppressor (Tan)", "rhsusf_acc_M2010S", 50, "item"],
+	
+	// Bipods
+	["Harris Bipod", "rhsusf_acc_harris_bipod", 50, "item"],
+	["Surefire SFMB Muzzle Brake", "rhsusf_acc_SFMB556", 50, "item"],
+	["Bipod (Black)", "bipod_01_F_blk", 250, "item"],
 	["Bipod (Olive)", "bipod_03_F_oli", 250, "item"],
-	["Bipod (Sand)", "bipod_01_F_snd", 250, "item"],
-	["Bipod (Tan)", "bipod_02_F_tan", 250, "item"], 
-	["Flashlight", "acc_flashlight", 25, "item"],
-	["IR Laser Pointer", "acc_pointer_IR", 25, "item"],
-	["Yorris Sight (Zubr Revolver)", "optic_Yorris", 50, "item"],
-	["MRD Sight (4-Five Pistol)", "optic_MRD", 50, "item"],
-	["ACO (CQB)", "optic_aco_smg", 50, "item"],
-	["Holosight (CQB)", "optic_Holosight_smg", 50, "item"],
-	["ACO (Red)", "optic_Aco", 75, "item"],
-	["ACO (Green)", "optic_Aco_grn", 75, "item"],
-	["Holosight", "optic_Holosight", 75, "item"],
-	["MRCO", "optic_MRCO", 100, "item"],
-	["ARCO", "optic_Arco", 125, "item"],
-	["RCO", "optic_Hamr", 150, "item"],
-	["MOS", "optic_SOS", 150, "item"],
-	["DMS", "optic_DMS", 175, "item"],
-	["AMS [DLC]", "optic_AMS", 200, "item"],
-	["AMS (Khaki) [DLC]", "optic_AMS_khk", 200, "item"],
-	["AMS (Sand) [DLC]", "optic_AMS_snd", 200, "item"],
-	["Kahlia [DLC]", "optic_KHS_blk", 250, "item"],
-	["Kahlia (Hex) [DLC]", "optic_KHS_hex", 250, "item"],
-	["Kahlia (Tan) [DLC]", "optic_KHS_tan", 250, "item"],
-	["Kahlia (Old) [DLC]", "optic_KHS_old", 250, "item"],
-	["LRPS", "optic_LRPS", 300, "item"],
-	["NVS", "optic_NVS", 500, "item"],
-	["TWS", "optic_tws", 5000, "item"],
-	["TWS MG", "optic_tws_mg", 6000, "item"],
-	["Nightstalker", "optic_Nightstalker", 7500, "item"]
+	["Bipod (Tan)", "bipod_02_F_tan", 250, "item"]
+	
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
