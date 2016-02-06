@@ -32,12 +32,12 @@ _setupVars =
 					["rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy", "rhsusf_m1025_w_mk19"] // Veh 2
 				],
 				[ // CSAT convoy
-					["rhs_tigr_sts_vdv", "rhs_tigr_sts_vdv"], // Veh 1
-					["rhs_tigr_m_vdv", "rhs_tigr_m_vdv"] // Veh 2
+					["rhs_tigr_m_vdv", "rhs_tigr_sts_vdv"], // Veh 1
+					["rhs_tigr_m_vdv", "rhs_tigr_sts_vdv"] // Veh 2
 				],
 				[ // AAF convoy
 					["rhs_uaz_dshkm_chdkz", "rhs_uaz_ags_chdkz"], // Veh 1
-					["rhs_uaz_dshkm_chdkz", "rhs_uaz_dshkm_chdkz"] // Veh 2
+					["rhs_uaz_dshkm_chdkz", "rhs_uaz_ags_chdkz"] // Veh 2
 				]
 			]
 		],

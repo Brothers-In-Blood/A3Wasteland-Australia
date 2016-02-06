@@ -33,5 +33,5 @@
 	["RHS_M2StaticMG_D", [6.15, 8.8, 0], 0, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["RHS_M2StaticMG_D", [-6.25, -9.8, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["RHS_MK19_TriPod_D", [14.7, -0.95, 0], 90, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
-	["RHS_M119_D", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
+	["RHS_M2StaticMG_D", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
 ]
