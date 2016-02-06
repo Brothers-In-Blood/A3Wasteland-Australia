@@ -109,7 +109,7 @@ rifleArray = compileFinal str
 	["M4A1 PIP (Grippod)", "rhs_weap_m4a1_grip", 150],
 	["M4A1 PIP (M203)", "rhs_weap_m4a1_m203", 150],
 	["M4A1 PIP (M203S)", "rhs_weap_m4a1_m203s", 150],
-	["M4A1 PIP (M320)", "rhs_weap_m4a1_m320", 150],
+	["M4A1 PIP (M320)", "rhs_weap_m4a1_m320", 150]
 		
 ];
 
