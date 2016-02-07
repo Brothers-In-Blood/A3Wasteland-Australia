@@ -514,6 +514,18 @@ R3F_LOG_CFG_objets_transportables =
 	["RHS_MK19_TriPod_D", 10],
 	["RHS_NSV_TriPod_MSV", 10],
 	
+	// Custom base objects
+	["Land_Castle_01_tower_F", 110], // Castle tower
+	["Land_Castle_01_wall_07_F", 110], // Castle wall with walkway
+	["Land_Castle_01_church_a_ruin_F", 110], // Castle wall with windows
+	["Land_Castle_01_wall_14_F", 110],  // Castle wall with stairs (U shaped) 
+	["Land_LightHouse_F", 110], // Lighthouse
+	["Land_Hangar_F", 110], // Hanger
+	["Land_Shed_Big_F", 110], // Shed large
+	["Land_Shed_Small_F", 55], // Shed half
+	["Land_Cargo_HQ_V1_F", 30], // Mil HQ
+	["Land_Medevac_HQ_V1_F", 30], // Med HQ
+	
 	// Vanilla
 	["Static_Designator_01_base_F", 2],
 	["Static_Designator_02_base_F", 2],
