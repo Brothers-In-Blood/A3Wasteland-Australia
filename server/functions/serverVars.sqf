@@ -43,7 +43,6 @@ lightMilitaryVehicles =
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
-	"rhs_bmp2_vdv",
 	"rhs_gaz66_repair_vmf",
 	"rhsusf_rg33_d",
 	"rhsusf_rg33_wd",
