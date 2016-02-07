@@ -333,7 +333,7 @@ ammoArray = compileFinal str
 	["FGM-148 AT Rocket", "rhs_fgm148_magazine_AT", 55],
 	["FIM-92F AA Rocket", "rhs_fim92_mag", 55],
 	["MK153 SMAW HEAA Rocket", "rhs_mag_smaw_HEAA", 55],
-	["MK153 SMAW HEAA Rocket", "rhs_mag_smaw_HEDP", 55],
+	["MK153 SMAW HEDP Rocket", "rhs_mag_smaw_HEDP", 55],
 	["5rd MK153 SMAW Marker Rounds", "rhs_mag_smaw_SR", 55],
 	["RPG-26 AT Rocket", "rhs_rpg26_mag", 55],
 	["RPG-7 PG7VL AT Rocket", "rhs_rpg7_PG7VL_mag", 55],
