@@ -37,52 +37,60 @@ for "_i" from 1 to _nbUnits do
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
-	_unit addVest "V_PlateCarrier1_rgr";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addVest "rhs_6b23_ML_6sh92";
+	_unit addMagazine "rhs_30Rnd_762x39mm";
+	_unit addMagazine "rhs_30Rnd_762x39mm";
+	_unit addMagazine "rhs_30Rnd_762x39mm";
 
 	switch (true) do
 	{
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			_unit addUniform "U_B_CombatUniform_mcam_vest";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "arifle_TRG21_GL_F";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addUniform "rhs_uniform_mflora_patchless";
+			_unit addHeadgear "rhs_6b27m_ML_ess_bala";
+			_unit addMagazine "rhs_VOG25";
+			_unit addWeapon "rhs_weap_ak103_gp25_npz";
+			_unit addMagazine "rhs_VOG25";
+			_unit addMagazine "rhs_VOG25";
 		};
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addUniform "U_B_CombatUniform_mcam_tshirt";
-			_unit addBackpack "B_Kitbag_mcamo";
-			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addUniform "rhs_uniform_mflora_patchless";
+			_unit addHeadgear "rhs_6b27m_ML_ess_bala";
+			_unit addBackpack "rhs_assault_umbts";
+			_unit addWeapon "rhs_weap_ak104_npz";
+			_unit addMagazine "rhs_rpg7_PG7VR_mag";
+			_unit addWeapon "rhs_weap_rpg7";
+			_unit addMagazine "rhs_rpg7_PG7VR_mag";
+			_unit addMagazine "rhs_rpg7_PG7VR_mag";
+			_unit addPrimaryWeaponItem "rhs_acc_2dpZenit";
+			_unit enablegunlights "forceOn";
 		};
 		// Rifleman
 		default
 		{
-			_unit addUniform "U_B_CombatUniform_mcam";
+			_unit addUniform "rhs_uniform_mflora_patchless";
+			_unit addHeadgear "rhs_6b27m_ML_ess_bala";
 
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "arifle_TRG21_F";
+				_unit addWeapon "rhs_weap_pkm";
+				_unit addBackpack "rhs_assault_umbts";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addWeapon "arifle_TRG20_F";
+				_unit addMagazine "rhs_100Rnd_762x54mmR";
+				_unit addMagazine "rhs_100Rnd_762x54mmR";
+				_unit addWeapon "rhs_weap_ak104_npz";
+				_unit addPrimaryWeaponItem "rhs_acc_2dpZenit";
+				_unit enablegunlights "forceOn";
 			};
 		};
 	};
 
-	_unit addPrimaryWeaponItem "acc_flashlight";
-	_unit enablegunlights "forceOn";
 
 	_unit addRating 1e11;
 	_unit spawn addMilCap;

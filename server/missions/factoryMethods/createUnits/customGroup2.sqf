@@ -36,42 +36,58 @@ for "_i" from 1 to _nbUnits do
 	removeAllAssignedItems _unit;
 	removeVest _unit;
 	removeBackpack _unit;
-	_unit addVest "V_HarnessOSpec_gry";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addVest "rhsusf_iotv_ucp_Rifleman";
 
 	switch (true) do
 	{
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "arifle_TRG21_GL_F";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addUniform "rhs_uniform_cu_ucp_101st";
+			_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+			_unit addMagazine "rhs_mag_M441_HE";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addWeapon "rhs_weap_m4a1_carryhandle_m203";
+			_unit addMagazine "rhs_mag_M441_HE";
+			_unit addMagazine "rhs_mag_M441_HE";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 		};
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addBackpack "B_Kitbag_mcamo";
-			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addUniform "rhs_uniform_cu_ucp_101st";
+			_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+			_unit addBackpack "rhsusf_assault_eagleaiii_ucp";
+			_unit addMagazine "rhs_200rnd_556x45_M_SAW";
+			_unit addMagazine "rhs_mag_smaw_HEAA";
+			_unit addWeapon "rhs_weap_m249_pip_S_para";
+			_unit addWeapon "rhs_weap_smaw";
+			_unit addMagazine "rhs_mag_smaw_HEAA";
+			_unit addMagazine "rhs_200rnd_556x45_M_SAW";
 		};
 		// Rifleman
 		default
 		{
+			_unit addUniform "rhs_uniform_cu_ucp_101st";
+			_unit addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "arifle_TRG21_F";
-				_unit setRank "SERGEANT";
+			_unit addWeapon "rhs_weap_M590_8RD";
+			_unit setRank "SERGEANT";
+			_unit addMagazine "rhsusf_8Rnd_00Buck";
+			_unit addMagazine "rhsusf_8Rnd_00Buck";
+			_unit addMagazine "rhsusf_8Rnd_00Buck";
 			}
 			else
 			{
-				_unit addWeapon "arifle_TRG20_F";
+			_unit addWeapon "rhs_weap_m4_grip";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 			};
 		};
 	};
