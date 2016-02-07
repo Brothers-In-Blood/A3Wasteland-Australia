@@ -78,12 +78,12 @@ for "_i" from 1 to _nbUnits do
 			{
 				_unit addWeapon "rhs_weap_pkm";
 				_unit addBackpack "rhs_assault_umbts";
+				_unit addMagazine "rhs_100Rnd_762x54mmR";
+				_unit addMagazine "rhs_100Rnd_762x54mmR";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addMagazine "rhs_100Rnd_762x54mmR";
-				_unit addMagazine "rhs_100Rnd_762x54mmR";
 				_unit addWeapon "rhs_weap_ak104_npz";
 				_unit addPrimaryWeaponItem "rhs_acc_2dpZenit";
 				_unit enablegunlights "forceOn";

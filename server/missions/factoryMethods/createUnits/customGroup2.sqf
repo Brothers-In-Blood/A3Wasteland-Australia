@@ -83,10 +83,10 @@ for "_i" from 1 to _nbUnits do
 			}
 			else
 			{
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 			_unit addWeapon "rhs_weap_m4_grip";
-			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
-			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
-			_unit addMagazine "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 			_unit addPrimaryWeaponItem "rhsusf_acc_nt4_black";
 			};
 		};
