@@ -772,7 +772,7 @@ genObjectsArray = compileFinal str
 	["Shed (Large)", "Land_Shed_Big_F", 150, "object"], 
 	["Shed (Half, Wall)", "Land_Shed_Small_F", 150, "object"],
 	["Military Office", "Land_Cargo_HQ_V1_F", 150, "object"],  
-	["Medical Office", "Land_Medevac_HQ_V1_F", 150, "object"],
+	["Medical Office", "Land_Medevac_HQ_V1_F", 150, "object"]
 	
 ];
 
