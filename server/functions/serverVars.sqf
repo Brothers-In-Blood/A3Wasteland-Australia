@@ -43,10 +43,10 @@ lightMilitaryVehicles =
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
-//	"rhs_bmp2_vdv",
-//	"rhs_gaz66_repair_vmf",
-//	"rhsusf_rg33_d",
-//	"rhsusf_rg33_wd",
+	"rhs_bmp2_vdv",
+	"rhs_gaz66_repair_vmf",
+	"rhsusf_rg33_d",
+	"rhsusf_rg33_wd",
 	"rhsusf_m1025_w",
 	"rhs_tigr_m_vdv",
 	"rhs_tigr_vdv"
@@ -55,16 +55,16 @@ mediumMilitaryVehicles =
 //Water Vehicles - Random Spawns
 waterVehicles =
 [
-//	"B_Lifeboat",
-//	"O_Lifeboat",
-//	"C_Rubberboat",
+	"B_Lifeboat",
+	"O_Lifeboat",
+	"C_Rubberboat",
 //	"B_SDV_01_F",
 //	"O_SDV_01_F",
 //	"I_SDV_01_F",
-//	"B_Boat_Transport_01_F",
-//	"O_Boat_Transport_01_F",
-//	"I_Boat_Transport_01_F",
-//	"I_G_Boat_Transport_01_F",
+	"B_Boat_Transport_01_F",
+	"O_Boat_Transport_01_F",
+	"I_Boat_Transport_01_F",
+	"I_G_Boat_Transport_01_F",
 	"B_Boat_Armed_01_minigun_F",
 	"O_Boat_Armed_01_hmg_F",
 	"I_Boat_Armed_01_minigun_F",
@@ -135,6 +135,7 @@ staticWeaponsList =
 staticHeliList =
 [
 	"rhs_ka60_grey",
+	"B_Heli_Light_01_F",
 	"RHS_Mi8AMT_vvs",
 	"rhs_ka60_c",
 	"RHS_Mi8mt_vvs"
