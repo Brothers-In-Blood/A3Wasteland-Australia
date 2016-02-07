@@ -78,7 +78,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "rhsusf_ach_helmet_ucp" };
+		if (_item == "headgear") then { _result = "rhsusf_ach_helmet_ocp" };
 	};
 	case OPFOR:
 	{
@@ -153,7 +153,7 @@ switch (_side) do
 			{
 				//if (_item == "uniform") then { _result = "rhs_uniform_cu_ucp" };
 				if (_item == "vest") then { _result = "rhsusf_iotv_ucp" };
-				_player forceAddUniform "rhs_uniform_cu_ucp_10th";
+				_player forceAddUniform "rhs_uniform_cu_ucp";
 				_player addBackpack "rhsusf_assault_eagleaiii_ucp";
 
 				_player addMagazine "rhsusf_mag_7x45acp_MHP";
@@ -168,7 +168,7 @@ switch (_side) do
 			{
 				//if (_item == "uniform") then { _result = "rhs_uniform_cu_ucp" };
 				if (_item == "vest") then { _result = "rhsusf_iotv_ucp" };
-				_player forceAddUniform "rhs_uniform_cu_ucp_10th";
+				_player forceAddUniform "rhs_uniform_cu_ucp";
 				_player addBackpack "rhsusf_assault_eagleaiii_ucp";
 
 				_player addMagazine "rhsusf_mag_7x45acp_MHP";
@@ -181,7 +181,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "rhsusf_ach_helmet_ocp" };
+		if (_item == "headgear") then { _result = "rhsusf_ach_helmet_ucp" };
 	};
 };
 

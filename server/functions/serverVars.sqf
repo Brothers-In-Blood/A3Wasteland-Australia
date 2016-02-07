@@ -25,7 +25,7 @@ civilianVehicles =
 	"rhs_uaz_open_MSV_01",
 	"RHS_Ural_Open_Civ_01",
 	"rhsusf_m998_w_2dr",
-	"rhsusf_m998_w_4dr",
+	"rhsusf_m998_w_4dr"
 ];
 
 //Light Military Vehicle List - Random Spawns
