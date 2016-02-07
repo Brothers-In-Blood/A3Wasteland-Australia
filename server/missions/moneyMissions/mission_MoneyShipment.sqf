@@ -47,19 +47,19 @@ _setupVars =
 			50000, // Money
 			[
 				[ // NATO convoy
-					["rhsusf_rg33_m2_d"], // Veh 1
+					["rhsusf_rg33_m2_d",rhsusf_rg33_m2_wd"], // Veh 1
 					["rhsusf_m113_usarmy", "rhsusf_m113_usarmy_MK19", "RHS_M2A2"], // Veh 2
-					["rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy", "rhsusf_rg33_m2_d"] // Veh 3
+					["rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy", "rhsusf_rg33_m2_wd"] // Veh 3
 				],
 				[ // CSAT convoy
-					["rhs_tigr_sts_vdv"], // Veh 1
+					["rhs_tigr_sts_vdv","rhs_bmd4m_vdv"], // Veh 1
 					["rhs_bmd1pk", "rhs_btr70_vmf", "rhs_bmp3m_msv"], // Veh 2
 					["rhs_tigr_sts_vdv","rhs_bmd4m_vdv"] // Veh 3
 				],
 				[ // AAF convoy
 					["rhs_uaz_spg9_chdkz", "rhs_uaz_dshkm_chdkz"], // Veh 1
 					["rhs_bmd1pk", "rhs_btr70_vmf", "rhs_bmp3m_msv"], // Veh 2
-					["rhs_prp3_vdv"] // Veh 3
+					["rhs_prp3_vdv","rhs_uaz_spg9_chdkz"] // Veh 3
 				]
 			]
 		],
@@ -80,7 +80,7 @@ _setupVars =
 				],
 				[ // AAF convoy
 					["rhs_btr80a_msv", "rhs_bmp3m_msv"], // Veh 1
-					["rhs_t80bv"], // Veh 2
+					["rhs_t80bv","rhs_t90_tv"], // Veh 2
 					["rhs_btr80a_msv", "rhs_bmp3mera_msv", "rhs_sprut_vdv"] // Veh 3
 				]
 			]
@@ -92,18 +92,18 @@ _setupVars =
 			[
 				[ // NATO convoy
 					["rhsusf_m1a1fep_wd", "rhsusf_m1a1aim_tuski_wd"], // Veh 1
-					["RHS_M2A3_BUSKIII"], // Veh 2
+					["RHS_M2A3_BUSKIII","RHS_M2A3_BUSKI"], // Veh 2
 					["rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a2sep1wd_usarmy"], // Veh 3
 					["rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a2sep1wd_usarmy"] // Veh 4
 				],
 				[ // CSAT convoy
-					["rhs_t90a_tv"], // Veh 1
+					["rhs_t90a_tv","rhs_t90_tv"], // Veh 1
 					["rhs_t72ba_tv","rhs_t80u"], // Veh 2
 					["rhs_btr80a_msv", "rhs_bmp3mera_msv", "rhs_sprut_vdv"], // Veh 3
 					["rhs_btr80a_msv", "rhs_bmp3mera_msv", "rhs_sprut_vdv"] // Veh 4
 				],
 				[ // AAF convoy
-					["rhs_t90a_tv"], // Veh 1
+					["rhs_t90a_tv","rhs_t90_tv"], // Veh 1
 					["rhs_t72ba_tv","rhs_t80u"], // Veh 2
 					["rhs_btr80a_msv", "rhs_bmp3mera_msv", "rhs_sprut_vdv"], // Veh 3
 					["rhs_btr80a_msv", "rhs_bmp3mera_msv", "rhs_sprut_vdv"] // Veh 4
