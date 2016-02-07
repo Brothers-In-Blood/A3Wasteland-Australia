@@ -21,40 +21,35 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
-	"C_Quadbike_01_F",
-	"C_Hatchback_01_F",
-	"C_Hatchback_01_sport_F",
-	"C_SUV_01_F",
-	"C_Offroad_01_F",
-	"I_G_Offroad_01_F",
-	"C_Van_01_box_F",
-	"C_Van_01_transport_F"
+	"RHS_UAZ_MSV_01",
+	"rhs_uaz_open_MSV_01",
+	"RHS_Ural_Open_Civ_01",
+	"rhsusf_m998_w_2dr",
+	"rhsusf_m998_w_4dr",
 ];
 
 //Light Military Vehicle List - Random Spawns
 lightMilitaryVehicles =
 [
-	"B_Quadbike_01_F",
-	"O_Quadbike_01_F",
-	"I_Quadbike_01_F",
-	"I_G_Quadbike_01_F",
-//	"O_Truck_02_covered_F",
-//	"I_Truck_02_covered_F",
-//	"O_Truck_02_transport_F",
-//	"I_Truck_02_transport_F",
-	"I_G_Offroad_01_armed_F"
+	"rhs_uaz_open_MSV_01",
+	"rhs_uaz_dshkm_chdkz",
+	"rhsusf_m1025_w",
+	"rhsusf_m1025_d",
+	"rhsusf_m1025_w_s",
+	"rhsusf_m1025_d_s",
+	"rhs_gaz66_r142_vmf"
 ];
 
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
-//	"I_Truck_02_Fuel_F",
-//	"O_Truck_02_Fuel_F",
-//	"I_Truck_02_medical_F",
-//	"O_Truck_02_medical_F",
-	"B_MRAP_01_F",
-	"O_MRAP_02_F",
-	"I_MRAP_03_F"
+//	"rhs_bmp2_vdv",
+//	"rhs_gaz66_repair_vmf",
+//	"rhsusf_rg33_d",
+//	"rhsusf_rg33_wd",
+	"rhsusf_m1025_w",
+	"rhs_tigr_m_vdv",
+	"rhs_tigr_vdv"
 ];
 
 //Water Vehicles - Random Spawns
@@ -132,78 +127,94 @@ objectList =
 //Object List - Random Spawns.
 staticWeaponsList =
 [
-	"B_Mortar_01_F",
-	"O_Mortar_01_F",
-	"I_Mortar_01_F",
-	"I_G_Mortar_01_F"
+	"rhs_2b14_82mm_msv",
+	"RHS_M252_D"
 ];
 
 //Object List - Random Helis.
 staticHeliList =
 [
-	"C_Heli_Light_01_civil_F",
-	"B_Heli_Light_01_F",
-	"O_Heli_Light_02_unarmed_F",
-	"I_Heli_light_03_unarmed_F"
+	"rhs_ka60_grey",
+	"RHS_Mi8AMT_vvs",
+	"rhs_ka60_c",
+	"RHS_Mi8mt_vvs"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
 //Object List - Random Planes.
 staticPlaneList =
 [
-	"B_Plane_CAS_01_F",
-	"O_Plane_CAS_02_F",
-	"I_Plane_Fighter_03_CAS_F"
+	"RHS_Su25SM_vvs",
+	"RHS_A10",
+	"RHS_T50_vvs_051",
+	"rhsusf_f22"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-//	"hgun_P07_F",
-//	"hgun_Rook40_F",
-//	"hgun_ACPC2_F",
-//	"arifle_SDAR_F",
-	"SMG_01_F",	// Vermin .45 ACP
-	"SMG_02_F",	// Sting 9mm
-	"hgun_PDW2000_F",
-	"arifle_TRG20_F",
-	"arifle_TRG21_F",
-	"arifle_TRG21_GL_F",
-	"arifle_Mk20C_F",
-	"arifle_Mk20_F",
-	"arifle_Mk20_GL_F",
-	"arifle_Katiba_F",
-	"arifle_Katiba_C_F",
-	"arifle_Katiba_GL_F",
-	"arifle_MXC_F",
-	"arifle_MX_F",
-	"arifle_MX_GL_F",
-	"arifle_MX_SW_F",
-	"arifle_MXM_F",
-	"srifle_EBR_F",
-	"LMG_Mk200_F",
-	"LMG_Zafir_F"
+	"rhsusf_weap_glock17g4",
+	"rhsusf_weap_m1911a1",
+	"rhsusf_weap_m9",
+	"rhs_weap_ak103_npz",
+	"rhs_weap_ak104",	
+	"rhs_weap_M590_5RD",	
+	"rhs_weap_ak103",
+	"rhs_weap_M590_8RD",
+	"rhs_weap_ak104_npz",
+	"rhs_weap_ak74m_plummag_folded",
+	"rhs_weap_ak74m",
+	"rhs_weap_ak74m_npz",
+	"rhs_weap_akm",
+	"rhs_weap_ak105",
+	"rhs_weap_ak105_npz",
+	"rhs_weap_sr25",
+	"rhs_weap_akms",
+	"rhs_weap_m14ebrri",
+	"rhs_weap_sr25_ec",
+	"rhs_weap_m16a4",
+	"rhs_weap_m16a4_carryhandle_grip",
+	"rhs_weap_m16a4_grip",
+	"rhs_weap_m4",
+	"rhs_weap_m4_grip2",
+	"rhs_weap_m4_carryhandle",
+	"rhs_weap_m4_grip",
+	"rhs_weap_m4a1_carryhandle",
+	"rhs_weap_m4a1_carryhandle_grip2",
+	"rhs_weap_m4a1_carryhandle_grip",
+	"rhs_weap_m4a1",
+	"rhs_weap_m4a1_grip2",
+	"rhs_weap_m4a1_grip",
+	"rhs_weap_m249_pip_S",
+	"rhs_weap_m249_pip_L",
+	"rhs_weap_pkm",
+	"rhs_weap_pkp"
 ];
 
 vehicleAddition =
 [
-	"muzzle_snds_L", // 9mm
-	"muzzle_snds_M", // 5.56mm
-	"muzzle_snds_H", // 6.5mm
-	"muzzle_snds_H_MG", // 6.5mm LMG
-	"muzzle_snds_B", // 7.62mm
-	"muzzle_snds_acp", // .45 ACP
-	"optic_Arco",
-	"optic_SOS",
-	"optic_Hamr",
-	"optic_Aco",
-	"optic_ACO_grn",
-	"optic_aco_smg",
-	"optic_Holosight",
-	"optic_Holosight_smg",
-	"acc_flashlight",
-	"acc_pointer_IR",
-	"Medikit",
+	"rhs_acc_dtk4short",
+	"rhs_acc_dtk3",
+	"rhs_acc_dtk4long", 
+	"rhsusf_acc_SR25S", 
+	"rhsusf_acc_nt4_black",
+	"rhsusf_acc_SF3P556",
+	"rhsusf_acc_SFMB556",
+	"rhsusf_acc_harris_bipod",
+	"rhsusf_acc_rotex5_grey",
+	"rhsusf_acc_compm4",
+	"rhsusf_acc_ELCAN",
+	"rhsusf_acc_ACOG2_USMC",
+	"rhsusf_acc_ACOG_USMC",
+	"rhsusf_acc_ACOG3_USMC",
+	"rhsusf_acc_eotech_552",
+	"rhsusf_acc_LEUPOLDMK4",
+	"rhs_acc_pkas",
+	"rhs_acc_1p29",
+	"rhs_acc_ekp1",
+	"rhsusf_acc_anpeq15A",
+	"rhsusf_ANPVS_15",
+	"rhs_pdu4",
 	"Medikit",
 	"FirstAidKit",
 	"ToolKit"
@@ -212,7 +223,7 @@ vehicleAddition =
 vehicleAddition2 =
 [
 	"Chemlight_blue",
-	"Chemlight_green",
+	"rhs_tr8_periscope",
 	"Chemlight_yellow",
 	"Chemlight_red"
 ];

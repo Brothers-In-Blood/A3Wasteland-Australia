@@ -423,7 +423,6 @@ accessoriesArray = compileFinal str
 	
 	/* ----Bipods---- */
 	["Harris Bipod", "rhsusf_acc_harris_bipod", 50, "item"],
-	["Surefire SFMB Muzzle Brake", "rhsusf_acc_SFMB556", 50, "item"],
 	["Bipod (Black)", "bipod_01_F_blk", 250, "item"],
 	["Bipod (Olive)", "bipod_03_F_oli", 250, "item"],
 	["Bipod (Tan)", "bipod_02_F_tan", 250, "item"]
@@ -704,9 +703,9 @@ genItemArray = compileFinal str
 	["Lerca 1200 Rangefinder (Black)", "lerca_1200_black", 50, "binoc"],
 	["Lerca 1200 Rangefinder (Tan)", "lerca_1200_tan", 50, "binoc"],
 	["Leupold Mk4 Spotting Scope", "Leupold_Mk4", 50, "binoc"],
-	["Binoculars", "rhs_pdu4", 50, "binoc"],
+	["Laser Rangefinder", "Rangefinder", 500, "binoc"],
+	["PDU-4 Binoculars", "rhs_pdu4", 50, "binoc"],
 	["TR-8 Periscope", "rhs_tr8_periscope", 50, "binoc"],
-	["Binoculars", "Binocular", 50, "binoc"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],

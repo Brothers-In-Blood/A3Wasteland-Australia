@@ -30,34 +30,33 @@ _player unlinkItem "ItemGPS";
 // Remove NVG
 if (hmd _player != "") then { _player unlinkItem hmd _player };
 
-// Add NVG
-_player linkItem "NVGoggles";
+// Add NVG (or not)
+// _player linkItem "NVGoggles";
 
-_player addBackpack "B_AssaultPack_rgr";
+//_player addBackpack "B_AssaultPack_rgr";
 
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addWeapon "hgun_ACPC2_F";
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addItem "FirstAidKit";
-_player selectWeapon "hgun_ACPC2_F";
+//_player addMagazine "9Rnd_45ACP_Mag";
+//_player addWeapon "hgun_ACPC2_F";
+//_player addMagazine "9Rnd_45ACP_Mag";
+//_player addMagazine "9Rnd_45ACP_Mag";
+//_player addMagazine "9Rnd_45ACP_Mag";
+//_player addItem "FirstAidKit";
+//_player selectWeapon "hgun_ACPC2_F";     Weapons and gear moved to getDefaultClothing.sqf
 
 switch (true) do
 {
 	case (["_medic_", typeOf _player] call fn_findString != -1):
 	{
-		_player removeItem "FirstAidKit";
-		_player addItem "Medikit";
+		//_player removeItem "FirstAidKit";
+		//_player addItem "Medikit";
 	};
 	case (["_engineer_", typeOf _player] call fn_findString != -1):
 	{
-		_player addItem "MineDetector";
-		_player addItem "Toolkit";
+		//_player addItem "Toolkit";
 	};
 	case (["_sniper_", typeOf _player] call fn_findString != -1):
 	{
-		_player addWeapon "Rangefinder";
+		_player addWeapon "Leupold_Mk4";
 	};
 };
 
