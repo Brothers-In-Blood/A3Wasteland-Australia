@@ -37,5 +37,5 @@
 	["rhs_KORD_high_MSV", [4.2, 6.6, 0], 0, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["rhs_KORD_high_MSV", [-4.5, 6.6, 0], 0, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["rhs_DSHKM_ins", [-4.9, -6.5, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
-	["rhs_D30_msv", [4.1, -6.5, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
+	["rhs_KORD_high_MSV", [4.1, -6.5, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
 ]

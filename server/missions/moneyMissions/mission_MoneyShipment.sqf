@@ -29,7 +29,7 @@ _setupVars =
 			[
 				[ // NATO convoy
 					["rhsusf_m1025_w_m2", "rhsusf_m1025_w_mk19"], // Veh 1
-					["rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy", "rhsusf_m1025_w_mk19"] // Veh 2
+					["rhsusf_m1025_w_m2", "rhsusf_m1025_w_mk19"] // Veh 2
 				],
 				[ // CSAT convoy
 					["rhs_tigr_m_vdv", "rhs_tigr_sts_vdv"], // Veh 1
