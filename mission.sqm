@@ -2658,7 +2658,7 @@ class Mission
 		class Item77
 		{
 			position[]={17023.916,8.5,33842.027};
-			name="Town_22";
+			name="Town_21";
 			type="Empty";
 			colorName="ColorRed";
 		};
