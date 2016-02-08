@@ -564,6 +564,7 @@ uniformArray = compileFinal str
 	["FROG M81", "rhs_uniform_FROG01_m81", 300, "uni"],
 	["FROG MARPAT Desert", "rhs_uniform_FROG01_d", 300, "uni"],
 	["FROG MARPAT Woodland", "rhs_uniform_FROG01_wd", 300, "uni"],
+	["Wetsuit", "U_B_Wetsuit", 300, "uni"],
 	
 	// Russia
 	["Flight Suit (RUS)", "rhs_uniform_df15", 300, "uni"],
@@ -618,6 +619,7 @@ vestArray = compileFinal str
 	["SPC (Rifleman)", "rhsusf_spc_rifleman", 200, "vest"],
 	["SPC (Squad Leader)", "rhsusf_spc_squadleader", 200, "vest"],
 	["SPC (Team Leader)", "rhsusf_spc_teamleader", 200, "vest"],
+	["Rebreather", "V_RebreatherB", 200, "vest"],
 
 	// RUSSIA
 	["6B23 6Sh92", "rhs_6b23_6sh92", 200, "vest"],
