@@ -6,7 +6,7 @@
 //	@file Author: Freshenmeyer
 //	@file Created: 23/01/2015 22:00
 
-// starting positions for this route
+// starting positions for this route (Toowoomba)
 _starts =
 [
 	[27970,20720],
@@ -14,7 +14,7 @@ _starts =
 	[27982,20720]
 ];
 
-// starting directions in which the vehicles are spawned on this route (Toowoomba)
+// starting directions in which the vehicles are spawned on this route 
 _startDirs =
 [
 	205,
