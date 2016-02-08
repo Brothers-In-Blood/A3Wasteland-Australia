@@ -108,7 +108,8 @@ rifleArray = compileFinal str
 	["M4A1 PIP (Grippod)", "rhs_weap_m4a1_grip", 150],
 	["M4A1 PIP (M203)", "rhs_weap_m4a1_m203", 150],
 	["M4A1 PIP (M203S)", "rhs_weap_m4a1_m203s", 150],
-	["M4A1 PIP (M320)", "rhs_weap_m4a1_m320", 150]
+	["M4A1 PIP (M320)", "rhs_weap_m4a1_m320", 150],
+	["SDAR UW Rifle", "arifle_SDAR_F", 150]
 
 ];
 
@@ -273,6 +274,7 @@ ammoArray = compileFinal str
 	["30rd 5.56x45 M855A1 (Yellow Tracers)", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow", 15],
 	["30rd 5.56x45 M855A1 (Orange Tracers)", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Orange", 15],
 	["30rd 5.56x45 M200 Blanks", "rhs_mag_30Rnd_556x45_M200_Stanag", 15],
+	["30rd 5.56x45 UW Mags (SDAR)", "20Rnd_556x45_UW_mag", 15],
 	
 	// SHELLS
 	
