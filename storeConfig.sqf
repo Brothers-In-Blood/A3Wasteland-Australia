@@ -398,27 +398,27 @@ accessoriesArray = compileFinal str
 	
 	/* ----Muzzle Devices---- */
 	// AK74
-	["DPM-AK-5 Flash Suppressor", "rhs_acc_ak5", 50, "item"],
-	["DTK Muzzle Brake", "rhs_acc_dtk", 50, "item"],
-	["DTK-1 Muzzle Brake", "rhs_acc_dtk1", 50, "item"],
-	["DTK-3 Muzzle Brake", "rhs_acc_dtk3", 50, "item"],
-	["DTK-4 Sound Suppressor", "rhs_acc_dtk4short", 50, "item"],
-	["TGP-A Sound Suppressor", "rhs_acc_tgpa", 50, "item"],
+	["DPM-AK-5 7.62x39 Flash Suppressor", "rhs_acc_ak5", 50, "item"],
+	["DTK 7.62x39 Muzzle Brake", "rhs_acc_dtk", 50, "item"],
+	["DTK-1 7.62x39 Muzzle Brake", "rhs_acc_dtk1", 50, "item"],
+	["DTK-3 7.62x39 Muzzle Brake", "rhs_acc_dtk3", 50, "item"],
+	["DTK-4 7.62x39 Sound Suppressor", "rhs_acc_dtk4short", 50, "item"],
+	["TGP-A 7.62x39 Sound Suppressor", "rhs_acc_tgpa", 50, "item"],
 	
 	// AK47
-	["DTK-4 Sound Suppressor", "rhs_acc_dtk4long", 50, "item"],
-	["DTK-4 Sound Suppressor (Taped)", "rhs_acc_dtk4screws", 50, "item"],
-	["PBS-1 Sound Suppressor", "rhs_acc_pbs1", 50, "item"],
-	["PG-S64 Flash Suppressor", "rhs_acc_pgs64", 50, "item"],
+	["DTK-4 5.45x39 Sound Suppressor", "rhs_acc_dtk4long", 50, "item"],
+	["DTK-4 5.45x39 Sound Suppressor (Taped)", "rhs_acc_dtk4screws", 50, "item"],
+	["PBS-1 5.45x39 Sound Suppressor", "rhs_acc_pbs1", 50, "item"],
+	["PG-S64 5.45x39 Flash Suppressor", "rhs_acc_pgs64", 50, "item"],
 	
 	// SR-25, M16, M4
 	["SR-25 7.62 Sound Suppressor", "rhsusf_acc_SR25S", 50, "item"],
-	["KAC NT4 Sound Suppressor", "rhsusf_acc_nt4_black", 50, "item"],
-	["KAC NT4 Sound Suppressor (Tan)", "rhsusf_acc_nt4_tan", 50, "item"],
-	["Rotex 5 Sound Suppressor", "rhsusf_acc_rotex5_grey", 50, "item"],
-	["Rotex 5 Sound Suppressor (Desert)", "rhsusf_acc_rotex5_tan", 50, "item"],
-	["Surefire SF3P Flash Suppressor", "rhsusf_acc_SF3P556", 50, "item"],
-	["Surefire SFMB Muzzle Brake", "rhsusf_acc_SFMB556", 50, "item"],
+	["KAC NT4 5.56x45 Sound Suppressor", "rhsusf_acc_nt4_black", 50, "item"],
+	["KAC NT4 5.56x45 Sound Suppressor (Tan)", "rhsusf_acc_nt4_tan", 50, "item"],
+	["Rotex 5 5.56x45 Sound Suppressor", "rhsusf_acc_rotex5_grey", 50, "item"],
+	["Rotex 5 5.56x45 Sound Suppressor (Desert)", "rhsusf_acc_rotex5_tan", 50, "item"],
+	["Surefire SF3P 5.56x45 Flash Suppressor", "rhsusf_acc_SF3P556", 50, "item"],
+	["Surefire SFMB 5.56x45 Muzzle Brake", "rhsusf_acc_SFMB556", 50, "item"],
 	
 	// M2010
 	["AAC TITAN .300WM Sound Suppressor (Tan)", "rhsusf_acc_M2010S", 50, "item"],
