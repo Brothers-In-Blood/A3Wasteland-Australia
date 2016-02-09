@@ -43,6 +43,7 @@ A3W_scriptThreads = [];
 [] execVM "storeConfig.sqf"; // Separated as its now v large
 [] execVM "briefing.sqf";
 
+
 if (!isDedicated) then
 {
 	[] spawn
