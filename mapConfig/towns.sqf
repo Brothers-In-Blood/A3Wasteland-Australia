@@ -26,5 +26,6 @@
 	["Town_18", 300, "Rockhampton"],
 	["Town_19", 200, "Support Base"],
 	["Town_20", 300, "Darwin"],
-	["Town_21", 400, "Darwin Airport"]
+	["Town_21", 400, "Darwin Airport"],
+	["Town_22", 200, "Hobart"]
 ]

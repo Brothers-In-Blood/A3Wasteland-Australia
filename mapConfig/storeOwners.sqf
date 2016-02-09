@@ -10,7 +10,7 @@
 // Name, Building Position, Desk Direction (or [Desk Direction, Front Offset]), Excluded Buttons
 storeOwnerConfig = compileFinal str
 [
-	["GenStore1", 0, 331, []],
+	["GenStore1", 0, 330, []],
 	["GenStore2", 0, 723, []],
 	["GenStore3", 0, 266, []],
 	["GenStore4", 0, 261, []],
@@ -19,14 +19,15 @@ storeOwnerConfig = compileFinal str
 	["GunStore1", 0, 267, []],
 	["GunStore2", 0, 180, []],
 	["GunStore3", 0, 225, []],
-	["GunStore4", 0, 172, []],
+	["GunStore4", 0, [172,-6], []],
 	["GunStore5", 0, 89, []],
 
 	// Buttons you can disable: "Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"
 	["VehStore1", 0, 53, ["Boats"]],
 	["VehStore2", 0, 7, ["Boats"]],
 	["VehStore3", 0, 328, []],
-	["VehStore4", 0, 278, []]
+	["VehStore4", 0, 278, []],
+	["VehStore5", 0, 225, []]
 ];
 
 // Outfits for store owners
@@ -47,5 +48,6 @@ storeOwnerConfigAppearance = compileFinal str
 	["VehStore1", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]],
 	["VehStore2", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]],
 	["VehStore3", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]],
-	["VehStore4", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]]
+	["VehStore4", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]],
+	["VehStore5", [["weapon", ""], ["uniform", "rhs_uniform_FROG01_m81"]]]
 ];
