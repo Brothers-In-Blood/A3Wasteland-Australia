@@ -12,7 +12,7 @@ if (!isServer) exitwith {};
 private ["_controllerSuffix", "_missionTimeout", "_availableLocations", "_missionLocation", "_leader", "_marker", "_failed", "_complete", "_startTime", "_oldAiCount", "_leaderTemp", "_newAiCount", "_adjustTime", "_lastPos", "_floorHeight", "_startAiCount", "_reinforcementsCalled", "_reinforceChanceRoll", "_reinforcementsToCall", "_aiGroup2"];
 
 // Variables that can be defined in the mission script :
-private ["_missionType", "_locationsArray", "_aiGroup", "_missionPos", "_missionPicture", "_missionHintText", "_successHintMessage", "_failedHintMessage"];
+private ["_missionType", "_locationsArray", "_aiGroup", "_missionPos", "_missionPicture", "_missionHintText", "_successHintMessage", "_failedHintMessage", "_reinforceChance", "_minReinforceGroups","_maxReinforceGroups"];
 
 _controllerSuffix = param [0, "", [""]];
 _aiGroup = grpNull;
