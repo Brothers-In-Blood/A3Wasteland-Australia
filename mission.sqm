@@ -2011,7 +2011,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			position[]={6976.1533,7.3742576,18065.475};
@@ -2122,6 +2122,20 @@ class Mission
 		};
 		class Item9
 		{
+			position[]={6976.1533,7.3742576,18065.475};
+			special="NONE";
+			id=170;
+			side="EMPTY";
+			vehicle="rhsusf_M1083A1P2_wd_fmtv_usarmy";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="Sell_Truck_8";
+			init="this call A3W_fnc_setupSellTruck";
+			description="Sell Vehicle";
+		};
+		class Item10
+		{
 			position[]={10532.852,77.809708,25216.535};
 			special="NONE";
 			id=171;
@@ -2134,7 +2148,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item10
+		class Item11
 		{
 			position[]={32285.07,7.8637648,2710.0854};
 			special="NONE";
@@ -2148,7 +2162,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item11
+		class Item12
 		{
 			position[]={24918.203,7.4310384,13149.365};
 			special="NONE";
@@ -2162,7 +2176,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item12
+		class Item13
 		{
 			position[]={38530.168,11.836349,20561.059};
 			special="NONE";
@@ -2176,7 +2190,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item13
+		class Item14
 		{
 			position[]={22827.49,23.354874,24534.402};
 			special="NONE";
