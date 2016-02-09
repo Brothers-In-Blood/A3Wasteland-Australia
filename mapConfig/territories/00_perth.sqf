@@ -2,7 +2,7 @@ _pos = [4297.8882,17811.201,5.3958721];
 _marker = createMarker ["TERRITORY_0_PERTH_A", _pos];
 _marker setMarkerShape "RECTANGLE";
 _marker setMarkerBrush "DiagGrid";
-_marker setMarkerSize [200, 400];
+_marker setMarkerSize [200, 100];
 _marker setMarkerDir 0;
 _marker setMarkerColor "ColorYellow";
 _marker setMarkerType "Empty";
