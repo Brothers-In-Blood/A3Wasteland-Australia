@@ -12,7 +12,8 @@ private ["_planeChoices", "_convoyVeh", "_veh1", "_createVehicle", "_vehicles", 
 _setupVars =
 {
 	_missionType = "Hostile Jet";
-	_locationsArray = nil; // locations are generated on the fly from towns
+	_locArray = ((call cityList) call BIS_fnc_selectRandom);
+	_missionPos = markerPos (_locArray select 0);
 };
 
 _setupObjects =
@@ -41,7 +42,7 @@ _setupObjects =
 		_direction = _this select 2;
 		
 
-		_vehicle = createVehicle [_type, _position, [], 0, "FLY"]; // Added to make it fly
+		_vehicle = createVehicle [_type, _missionPos, [], 0, "FLY"]; // Added to make it fly
 		_vehicle setVariable ["R3F_LOG_disabled", true, true];
 		_vel = [velocity _vehicle, -(_direction)] call BIS_fnc_rotateVector2D; // Added to make it fly
 		_vehicle setDir _direction;
