@@ -54,6 +54,7 @@ if (!isDedicated) then
 
 			waitUntil {!isNull player};
 			player setVariable ["playerSpawning", true, true];
+			player setVariable ["copLevel",1,true]; // Australia, allow into police stations
 			playerSpawning = true;
 
 			removeAllWeapons player;
@@ -63,7 +64,7 @@ if (!isDedicated) then
 			[player] joinSilent createGroup playerSide;
 
 			execVM "client\init.sqf";
-
+			
 			if ((vehicleVarName player) select [0,17] == "BIS_fnc_objectVar") then { player setVehicleVarName "" }; // undo useless crap added by BIS
 		}
 		else // Headless
