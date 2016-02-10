@@ -52,19 +52,7 @@ _setupObjects =
 	_chair2 setDir random 180;
 	_cFire1	= createVehicle ["Campfire_burning_F", _missionPos, [], 2, "None"];
 
-	_cashObjects = [];
-
-	for "_i" from 1 to 10 do
-	{
-		_cash = createVehicle ["Land_Money_F", _missionPos, [], 0, "None"];
-		_cash setVariable ["owner", "mission", true];
-		//_cashPos = getPosATL _cash;
-		//_cashPos set [2, getTerrainHeightASL _cashPos + 1];
-		//_cash setPos _cashPos;
-
-		// Money value is set only when AI are dead
-		_cashObjects pushBack _cash;
-	};
+	
 
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 
@@ -93,6 +81,21 @@ _successExec =
 	// Mission completed
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
+	// Spawn Money
+	_cashObjects = [];
+
+	for "_i" from 1 to 10 do
+	{
+		_cash = createVehicle ["Land_Money_F", _missionPos, [], 0, "None"];
+		_cash setVariable ["owner", "mission", true];
+		//_cashPos = getPosATL _cash;
+		//_cashPos set [2, getTerrainHeightASL _cashPos + 1];
+		//_cash setPos _cashPos;
+
+		// Money value is set only when AI are dead
+		_cashObjects pushBack _cash;
+	};
+	
 	// Give the rewards
 	{
 		_x setVariable ["cmoney", 6000, true];
