@@ -9,7 +9,7 @@ if (!isServer) exitwith {};
 
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
+private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1", "_cash"];
 
 _setupVars =
 {
@@ -52,6 +52,19 @@ _setupObjects =
 	_chair2 setDir random 180;
 	_cFire1	= createVehicle ["Campfire_burning_F", _missionPos, [], 2, "None"];
 
+	_cashObjects = [];
+
+	for "_i" from 1 to 10 do
+	{
+		_cash = createVehicle ["Land_Money_F", _missionPos, [], 0, "None"];
+		_cash setVariable ["owner", "mission", true];
+		//_cashPos = getPosATL _cash;
+		//_cashPos set [2, getTerrainHeightASL _cashPos + 1];
+		//_cash setPos _cashPos;
+
+		// Money value is set only when AI are dead
+		_cashObjects pushBack _cash;
+	};
 
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 
@@ -62,7 +75,7 @@ _setupObjects =
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
 
-	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, and take their supplies!<br/>Watch out for those windows!", sideMissionColor, _townName, _nbUnits];
+	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, and take their money and supplies!<br/>Watch out for those windows!", sideMissionColor, _townName, _nbUnits];
 };
 
 _waitUntilMarkerPos = nil;
@@ -80,7 +93,13 @@ _successExec =
 	// Mission completed
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
-	_successHintMessage = format ["Nice work!<br/><br/><t color='%1'>%2</t><br/>is a safe place again!<br/>Their belongings are now yours to take!", sideMissionColor, _townName];
+	// Give the rewards
+	{
+		_x setVariable ["cmoney", 6000, true];
+		_x setVariable ["owner", "world", true];
+	} forEach _cashObjects;
+
+	_successHintMessage = format ["Nice work!<br/><br/><t color='%1'>%2</t><br/>is a safe place again!<br/>Their belongings and cash are now yours to take!", sideMissionColor, _townName];
 	{ deleteVehicle _x } forEach [_tent1, _chair1, _chair2, _cFire1];
 };
 
