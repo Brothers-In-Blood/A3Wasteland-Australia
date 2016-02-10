@@ -66,7 +66,7 @@ _setupVars =
 		// Hard
 		[
 			"Large Money Shipment", // Marker text
-			75000, // Money
+			80000, // Money
 			[
 				[ // NATO convoy
 					["rhsusf_m113_usarmy", "rhsusf_m113_usarmy_MK19", "RHS_M2A2"], // Veh 1
