@@ -9,7 +9,7 @@ _editorOnly = ["A3W_atmEditorPlacedOnly"] call isConfigOn;
 
 if (isNil "A3W_atmArray") then
 {
-	A3W_atmArray = allMissionObjects "Land_Atm_01_F" + allMissionObjects "Land_Atm_02_F";
+	A3W_atmArray = allMissionObjects "city2_pillard_f" + allMissionObjects "mcl_atm";
 };
 
 {
