@@ -817,6 +817,8 @@ landArray = compileFinal str
 armoredArray = compileFinal str
 [
 	["9P129-1M Mobile ICBM Launcher", "rhs_9k79", 50000, "vehicle"],
+	["9P129-1M Mobile ICBM Launcher (Scatter)", "rhs_9k79_k", 65000, "vehicle"],
+	["9P129-1M Mobile ICBM Launcher (Nuclear Warhead)", "rhs_9k79_b", 10000000, "vehicle"],
 	["HMMWV (Woodland)", "rhsusf_m1025_w", 4500, "vehicle"],
 	["HMMWV (Desert)", "rhsusf_m1025_d", 4500, "vehicle"],
 	["HMMWV M2 (Woodland)", "rhsusf_m1025_w_m2", 9500, "vehicle"],
