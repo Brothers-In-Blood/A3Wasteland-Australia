@@ -2011,7 +2011,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=42;
+		items=41;
 		class Item0
 		{
 			position[]={6976.1533,7.3742576,18065.475};
@@ -2375,18 +2375,6 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={22333.2,0.516791,19214.4};
-			azimut=97.0285;
-			offsetY=0.15000001;
-			id=169;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item30
-		{
 			position[]={22392,0.516791,19260.7};
 			azimut=280.059;
 			offsetY=0.15000001;
@@ -2397,7 +2385,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item31
+		class Item30
         {
             position[]={22089.9,0.51679,269.731};
             azimut=269.731;
@@ -2409,7 +2397,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item32
+        class Item31
         {
             position[]={25084.6,0.516791,12759.6};
             azimut=268.725;
@@ -2421,7 +2409,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item33
+        class Item32
         {
             position[]={24831.7,0.516791,12451.4};
             azimut=89.353;
@@ -2433,7 +2421,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item34
+        class Item33
         {
             position[]={26168.3,0.516791,11139.3};
             azimut=0.11869;
@@ -2445,7 +2433,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item35
+        class Item34
         {
             position[]={31489.1,0.531174,16901.4};
             azimut=27.6029;
@@ -2457,7 +2445,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item36
+        class Item35
         {
             position[]={16117.7,0.51679,33452};
             azimut=91.029;
@@ -2469,7 +2457,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item37
+        class Item36
         {
             position[]={31190.6,0.516791,10217.6};
             azimut=90;
@@ -2481,7 +2469,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item38
+        class Item37
         {
             position[]={31205.9,0.516791,9554.09};
             azimut=270;
@@ -2493,7 +2481,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item39
+        class Item38
         {
             position[]={35096.4,0.571481,26071.4};
             azimut=89.09;
@@ -2505,7 +2493,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item40
+        class Item39
         {
             position[]={36990.9,0.516791,12292};
             azimut=180.038;
@@ -2517,7 +2505,7 @@ class Mission
             init="[this] call A3W_fnc_setupMissionATM";
             description="DO NOT MODIFY IN EDITOR";
         };
-        class Item41
+        class Item40
         {
             position[]={33144.9,0.516788,3895.27};
             azimut=180.394;
