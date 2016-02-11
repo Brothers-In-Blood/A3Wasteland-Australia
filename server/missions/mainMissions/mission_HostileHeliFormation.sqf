@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf"
 
-private ["_heliChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_box1", "_box2", "_box3"];
+private ["_heliChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_box1", "_box2", "_box3", "_cash"];
 
 _setupVars =
 {
@@ -131,7 +131,7 @@ _setupObjects =
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A formation of armed helicopters containing a <t color='%3'>%1</t> and two <t color='%3'>%2</t> are patrolling the island. Destroy them and recover their cargo!", _vehicleName, _vehicleName2, mainMissionColor];
+	_missionHintText = format ["A formation of armed helicopters containing a <t color='%3'>%1</t> and two <t color='%3'>%2</t> are patrolling the island. Destroy them and recover their money and cargo!", _vehicleName, _vehicleName2, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -160,7 +160,29 @@ _successExec =
 	_box3 setDir random 360;
 	[_box3, "mission_Main_A3snipers"] call fn_refillbox;
 
-	_successHintMessage = "The sky is clear again, the enemy patrol was taken out! Ammo crates have fallen near the wreck.";
+	// Spawn money
+	// Spawn Money
+	_cashObjects = [];
+
+	for "_i" from 1 to 10 do
+	{
+		_cash = createVehicle ["Land_Money_F", _missionPos, [], 0, "None"];
+		_cash setVariable ["owner", "mission", true];
+		//_cashPos = getPosATL _cash;
+		//_cashPos set [2, getTerrainHeightASL _cashPos + 1];
+		//_cash setPos _cashPos;
+
+		// Money value is set only when AI are dead
+		_cashObjects pushBack _cash;
+	};
+	
+	// Give the rewards
+	{
+		_x setVariable ["cmoney", 5000, true];
+		_x setVariable ["owner", "world", true];
+	} forEach _cashObjects;
+
+	_successHintMessage = "The sky is clear again, the enemy patrol was taken out! Ammo crates and cash have fallen near the wreck.";
 };
 
 _this call mainMissionProcessor;
