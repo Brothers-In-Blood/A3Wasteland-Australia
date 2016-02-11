@@ -98,7 +98,7 @@ _successExec =
 	
 	// Give the rewards
 	{
-		_x setVariable ["cmoney", 6000, true];
+		_x setVariable ["cmoney", 2000, true];
 		_x setVariable ["owner", "world", true];
 	} forEach _cashObjects;
 
