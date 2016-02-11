@@ -2011,7 +2011,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=42;
 		class Item0
 		{
 			position[]={6976.1533,7.3742576,18065.475};
@@ -2028,100 +2028,6 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={25126.529,7.4310384,12649.765};
-			azimut=91.999466;
-			offsetY=0.15000001;
-			id=162;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item2
-		{
-			position[]={36649.629,4.436069,12064.681};
-			azimut=269.461;
-			offsetY=0.15000001;
-			id=163;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item3
-		{
-			position[]={36692.223,4.6465797,12970.054};
-			azimut=359.01807;
-			offsetY=0.15000001;
-			id=164;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item4
-		{
-			position[]={35379.684,7.3121552,8409.9199};
-			azimut=359.72238;
-			offsetY=0.15000001;
-			id=165;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item5
-		{
-			position[]={38172.508,4.172555,19779.4};
-			azimut=270.27585;
-			id=166;
-			side="EMPTY";
-			vehicle="Land_Atm_01_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item6
-		{
-			position[]={27715.293,29.301666,17006.197};
-			azimut=229.50468;
-			offsetY=0.15000001;
-			id=167;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item7
-		{
-			position[]={31464.674,48.201424,16780.654};
-			azimut=114.76585;
-			id=168;
-			side="EMPTY";
-			vehicle="Land_Atm_01_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item8
-		{
-			position[]={38419.789,4.2067766,19463.877};
-			azimut=-177.09178;
-			offsetY=0.15000001;
-			id=169;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item9
-		{
 			position[]={10532.852,77.809708,25216.535};
 			special="NONE";
 			id=171;
@@ -2134,7 +2040,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item10
+		class Item2
 		{
 			position[]={32285.07,7.8637648,2710.0854};
 			special="NONE";
@@ -2148,7 +2054,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item11
+		class Item3
 		{
 			position[]={24918.203,7.4310384,13149.365};
 			special="NONE";
@@ -2162,7 +2068,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item12
+		class Item4
 		{
 			position[]={38530.168,11.836349,20561.059};
 			special="NONE";
@@ -2176,7 +2082,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item13
+		class Item5
 		{
 			position[]={22827.49,23.354874,24534.402};
 			special="NONE";
@@ -2190,6 +2096,439 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
+		class Item6
+		{
+			position[]={26167,1.25025,11140.3};
+			azimut=87.9963;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item7
+		{
+			position[]={25362,1.37555,12685.9};
+			azimut=180;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item8
+		{
+			position[]={31150.7,2.40211,11250.8};
+			azimut=89.3715;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item9
+		{
+			position[]={31527.5,1.25025,11268};
+			azimut=339.621;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item10
+		{
+			position[]={20758,1.25025,12819.4};
+			azimut=269.072;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item11
+		{
+			position[]={27599.5,2.49664,17005.8};
+			azimut=138.184;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		
+		class Item12
+		{
+			position[]={33568.7,1.25025,13078.2};
+			azimut=242.367;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item13
+		{
+			position[]={31491,1.26463,16900};
+			azimut=27.6029;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item14
+		{
+			position[]={22332.7,1.25025,19213.2};
+			azimut=96.1177;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item15
+		{
+			position[]={35387,1.2507,8543.3};
+			azimut=57.247;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item16
+		{
+			position[]={33138.9,1.25023,3895.53};
+			azimut=180.394;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item17
+		{
+			position[]={31140.6,1.25027,19886.6};
+			azimut=349.807;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item18
+		{
+			position[]={36440.4,1.25024,13133.4};
+			azimut=89.9989;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item19
+		{
+			position[]={33702.8,2.5006,3521.75};
+			azimut=40;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item20
+		{
+			position[]={37911.5,2.30581,19794.7};
+			azimut=269.476;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item21
+		{
+			position[]={22109.5,1.25024,25569.9};
+			azimut=91.0318;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item22
+		{
+			position[]={38328,1.25025,20097.8};
+			azimut=358.75;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item23
+		{
+			position[]={34979.1,1.25025,26198.6};
+			azimut=160.122;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item24
+		{
+			position[]={32023.6,1.25025,29843.2};
+			azimut=74.9538;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item25
+		{
+			position[]={5729.14,1.25025,18634.1};
+			azimut=87.9794;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item26
+		{
+			position[]={4609.5,1.25025,16995.9};
+			azimut=270.085;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item27
+		{
+			position[]={28464.3,1.25023,35142.1};
+			azimut=0.166689;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item28
+		{
+			position[]={16273.4,1.25025,33500.9};
+			azimut=0;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item29
+		{
+			position[]={22333.2,0.516791,19214.4};
+			azimut=97.0285;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item30
+		{
+			position[]={22392,0.516791,19260.7};
+			azimut=280.059;
+			offsetY=0.15000001;
+			id=169;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item31
+        {
+            position[]={22089.9,0.51679,269.731};
+            azimut=269.731;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item32
+        {
+            position[]={25084.6,0.516791,12759.6};
+            azimut=268.725;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item33
+        {
+            position[]={24831.7,0.516791,12451.4};
+            azimut=89.353;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item34
+        {
+            position[]={26168.3,0.516791,11139.3};
+            azimut=0.11869;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item35
+        {
+            position[]={31489.1,0.531174,16901.4};
+            azimut=27.6029;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item36
+        {
+            position[]={16117.7,0.51679,33452};
+            azimut=91.029;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item37
+        {
+            position[]={31190.6,0.516791,10217.6};
+            azimut=90;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item38
+        {
+            position[]={31205.9,0.516791,9554.09};
+            azimut=270;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item39
+        {
+            position[]={35096.4,0.571481,26071.4};
+            azimut=89.09;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item40
+        {
+            position[]={36990.9,0.516791,12292};
+            azimut=180.038;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
+        class Item41
+        {
+            position[]={33144.9,0.516788,3895.27};
+            azimut=180.394;
+            offsetY=0.15000001;
+            id=169;
+            side="EMPTY";
+            vehicle="Land_Atm_02_F";
+            skill=0.60000002;
+            init="[this] call A3W_fnc_setupMissionATM";
+            description="DO NOT MODIFY IN EDITOR";
+        };
 	};
 	class Markers
 	{
