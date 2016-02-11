@@ -567,6 +567,8 @@ uniformArray = compileFinal str
 	["FROG MARPAT Desert", "rhs_uniform_FROG01_d", 100, "uni"],
 	["FROG MARPAT Woodland", "rhs_uniform_FROG01_wd", 100, "uni"],
 	["Wetsuit", "U_B_Wetsuit", 500, "uni"],
+	["Wetsuit", "U_O_Wetsuit", 500, "uni"],
+	["Wetsuit", "U_I_Wetsuit", 500, "uni"],
 	
 	// Russia
 	["Flight Suit (RUS)", "rhs_uniform_df15", 100, "uni"],
@@ -588,7 +590,12 @@ uniformArray = compileFinal str
 	["Izlom Uniform", "rhs_uniform_mvd_izlom", 100, "uni"],
 	["M88 Tan", "rhs_uniform_m88_patchless", 200, "uni"],
 	["Mountain Flora", "rhs_uniform_mflora_patchless", 200, "uni"],
-	["Mountain Flora (VDV)", "rhs_uniform_vdv_mflora", 200, "uni"]
+	["Mountain Flora (VDV)", "rhs_uniform_vdv_mflora", 200, "uni"],
+	["Guerilla Outfit (Plain, Dark)", "U_IG_Guerilla2_1", 200, "uni"],
+	["Guerilla Outfit (Plain, Light)", "U_IG_Guerilla2_3", 200, "uni"],
+	["Guerilla Smocks", "U_IG_Guerilla3_1", 200, "uni"],
+	["Mountain Flora (VDV)", "U_IG_Guerilla3_2", 200, "uni"],
+	["Guerilla Smocks 1", "U_IG_Guerilla2_2", 200, "uni"]
 
 ];
 
@@ -622,6 +629,8 @@ vestArray = compileFinal str
 	["SPC (Squad Leader)", "rhsusf_spc_squadleader", 250, "vest"],
 	["SPC (Team Leader)", "rhsusf_spc_teamleader", 250, "vest"],
 	["Rebreather", "V_RebreatherB", 500, "vest"],
+	["Rebreather", "V_RebreatherIR", 500, "vest"],
+	["Rebreather", "V_RebreatherIA", 500, "vest"],
 
 	// RUSSIA
 	["6B23 6Sh92", "rhs_6b23_6sh92", 200, "vest"],
