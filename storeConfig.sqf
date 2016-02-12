@@ -971,7 +971,7 @@ helicoptersArray = compileFinal str
 	// RUS
 	["Ka-60 (Camo)", "rhs_ka60_c", 6500, "vehicle"],
 	["Ka-60 (Grey)", "rhs_ka60_grey", 6000, "vehicle"],
-	["Mi-8AMT", "RHS_Mi8AMT_vvs", 4000, "vehicle"],
+	["Mi-8AMT", "RHS_Mi8AMT_vvs", 8000, "vehicle"],
 	["Mi-8AMT (Civilian)", "RHS_Mi8amt_civilian", 8000, "vehicle"],
 	["Mi-8MT", "RHS_Mi8mt_vvs", 8000, "vehicle"],
 	["Mi-8MT (Cargo)", "RHS_Mi8mt_Cargo_vvs", 8500, "vehicle"],
