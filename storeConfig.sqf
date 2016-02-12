@@ -402,11 +402,11 @@ accessoriesArray = compileFinal str
 	["DTK 7.62x39 Muzzle Brake", "rhs_acc_dtk", 50, "item"],
 	["DTK-1 7.62x39 Muzzle Brake", "rhs_acc_dtk1", 50, "item"],
 	["DTK-3 7.62x39 Muzzle Brake", "rhs_acc_dtk3", 50, "item"],
-	["DTK-4 7.62x39 Sound Suppressor", "rhs_acc_dtk4short", 50, "item"],
 	["TGP-A 7.62x39 Sound Suppressor", "rhs_acc_tgpa", 50, "item"],
 	
 	// AK47
 	["DTK-4 5.45x39 Sound Suppressor", "rhs_acc_dtk4long", 50, "item"],
+	["DTK-4 5.45x39 Sound Suppressor (Short)", "rhs_acc_dtk4short", 50, "item"],
 	["DTK-4 5.45x39 Sound Suppressor (Taped)", "rhs_acc_dtk4screws", 50, "item"],
 	["PBS-1 5.45x39 Sound Suppressor", "rhs_acc_pbs1", 50, "item"],
 	["PG-S64 5.45x39 Flash Suppressor", "rhs_acc_pgs64", 50, "item"],
