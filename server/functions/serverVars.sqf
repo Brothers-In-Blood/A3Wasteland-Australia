@@ -135,9 +135,10 @@ staticHeliList =
 [
 	"rhs_ka60_grey",
 	"B_Heli_Light_01_F",
-	"RHS_Mi8AMT_vvs",
+	"RHS_Mi8mt_Cargo_vvs",
 	"rhs_ka60_c",
-	"RHS_Mi8mt_vvs"
+	"RHS_Mi8amt_civilian",
+	"RHS_UH1Y_UNARMED"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
