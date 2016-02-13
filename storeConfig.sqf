@@ -375,6 +375,7 @@ accessoriesArray = compileFinal str
 	["Aimpoint CompM4", "rhsusf_acc_compm4", 50, "item"],
 	["Leupold Mk4 ER/T (3.5-10x)", "rhsusf_acc_LEUPOLDMK4", 400, "item"],
 	["Leupold Mk4 ER/T (6.5-20x)", "rhsusf_acc_LEUPOLDMK4_2", 500, "item"],
+	["Night Vision Scope", "optic_NVS", 1000, "item"],
 	
 	// AK Style Side Mounted
 	["1P29 (4x)", "rhs_acc_1p29", 100, "item"],
