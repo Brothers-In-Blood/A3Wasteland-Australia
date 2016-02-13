@@ -65,7 +65,6 @@ loadScreen = "mapConfig\Loading.jpg";
 #include "addons\outlw_magrepack\config.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\JTS_PM\PM_Compact.hpp"
-#include "addons\vPin\dialog\vPin_mainMenu.hpp"
 
 class RscTitles
 {
