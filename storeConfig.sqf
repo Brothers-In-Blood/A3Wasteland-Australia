@@ -570,6 +570,9 @@ uniformArray = compileFinal str
 	["Wetsuit", "U_B_Wetsuit", 500, "uni"],
 	["Wetsuit", "U_O_Wetsuit", 500, "uni"],
 	["Wetsuit", "U_I_Wetsuit", 500, "uni"],
+	["Ghilly-Semi Arid (NATO)", "U_B_FullGhillie_sard", 4000, "uni"],
+	["Ghilly-Semi Arid (RUS)", "U_O_FullGhillie_sard", 4000, "uni"],
+	["Ghilly-Semi Arid (IND)", "U_I_FullGhillie_sard", 4000, "uni"],
 	
 	// Russia
 	["Flight Suit (RUS)", "rhs_uniform_df15", 100, "uni"],
