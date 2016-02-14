@@ -135,7 +135,7 @@ lmgArray = compileFinal str
 launcherArray = compileFinal str
 [
 	["9K38 Igla", "rhs_weap_igla", 5000],
-	["FGM-148 Javelin", "rhs_weap_fgm148", 6000],
+	["FGM-148 Javelin", "rhs_weap_fgm148", 10000],
 	["FIM-92 Stinger", "rhs_weap_fim92", 5500],
 	["M136 HEAT (Single-use)", "rhs_weap_M136", 3000],
 	["M136 HEDP (Single-use)", "rhs_weap_M136_hedp", 3000],
@@ -332,7 +332,7 @@ ammoArray = compileFinal str
 	
 	/* ----LAUNCHER ARRAY---- */
 	["9M38 AA Rocket", "rhs_mag_9k38_rocket", 1000],
-	["FGM-148 AT Rocket", "rhs_fgm148_magazine_AT", 4000],
+	["FGM-148 AT Rocket", "rhs_fgm148_magazine_AT", 8000],
 	["FIM-92F AA Rocket", "rhs_fim92_mag", 1000],
 	["MK153 SMAW HEAA Rocket", "rhs_mag_smaw_HEAA", 3000],
 	["MK153 SMAW HEDP Rocket", "rhs_mag_smaw_HEDP", 3000],
