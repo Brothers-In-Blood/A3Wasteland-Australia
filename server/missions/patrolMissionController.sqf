@@ -7,7 +7,7 @@
 #define MISSION_CTRL_PVAR_LIST PatrolMissions
 #define MISSION_CTRL_TYPE_NAME "Patrol"
 #define MISSION_CTRL_FOLDER "patrolMissions"
-#define MISSION_CTRL_DELAY (["A3W_patrolMissionDelay", 90*60] call getPublicVar)
+#define MISSION_CTRL_DELAY (["A3W_patrolMissionDelay", 45*60] call getPublicVar)
 #define MISSION_CTRL_COLOR_DEFINE patrolMissionColor
 
 #include "patrolMissions\patrolMissionDefines.sqf"
