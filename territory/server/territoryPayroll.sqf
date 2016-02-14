@@ -7,7 +7,7 @@
 if (!isServer) exitWith {};
 
 _timeInterval = ["A3W_payrollInterval", 30*60] call getPublicVar;
-_moneyAmount = ["A3W_payrollAmount", 100] call getPublicVar;
+_moneyAmount = ["A3W_payrollAmount", 4000] call getPublicVar;
 
 _territoryCapped = false;
 
