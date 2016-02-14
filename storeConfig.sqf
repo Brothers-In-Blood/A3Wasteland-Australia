@@ -372,9 +372,11 @@ accessoriesArray = compileFinal str
 	["M145 ELCAN (ARD)", "rhsusf_acc_ELCAN_ard", 200, "item"],
 	["M2A1 GL Red Dot", "rhsusf_acc_M2A1", 50, "item"],
 	["EOTech 552", "rhsusf_acc_eotech_552", 50, "item"],
+	["EOTech XPS2", "optic_Holosight", 50, "item"],
 	["Aimpoint CompM4", "rhsusf_acc_compm4", 50, "item"],
 	["Leupold Mk4 ER/T (3.5-10x)", "rhsusf_acc_LEUPOLDMK4", 400, "item"],
 	["Leupold Mk4 ER/T (6.5-20x)", "rhsusf_acc_LEUPOLDMK4_2", 500, "item"],
+	["Leupold Mark 4 HAMR", "optic_Hamr", 500, "item"],
 	["Night Vision Scope", "optic_NVS", 1000, "item"],
 	
 	// AK Style Side Mounted
