@@ -40,12 +40,6 @@ switch (true) do
 	};
 };
 
-_owner = _veh getVariable ["ownerUID", ""];
-
-if !(_owner in ["","0"]) then
-{
-	_variables pushBack ["ownerUID", _owner];
-};
 
 switch (true) do
 {
@@ -59,10 +53,10 @@ switch (true) do
 	};
 };
 
-//Save lockstate by LouD
-_lockState = _veh getVariable ["R3F_LOG_disabled",""];
-_variables pushBack ["R3F_LOG_disabled", _lockState];
+// Save lockstate by AgentRev
+_variables pushBack ["R3F_LOG_disabled", _veh getVariable ["R3F_LOG_disabled", false]];
 
+_owner = _veh getVariable ["ownerUID", ""];
 
 _doubleBSlash = (call A3W_savingMethod == "extDB");
 
