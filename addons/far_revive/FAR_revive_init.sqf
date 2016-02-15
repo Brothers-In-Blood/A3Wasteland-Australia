@@ -18,6 +18,7 @@ call compile preprocessFile "addons\far_revive\FAR_revive_funcs.sqf";
 FAR_isDragging = false;
 FAR_isDragging_EH = [];
 FAR_deathMessage = [];
+FAR_gutMessage = [];
 FAR_Debugging = false;
 
 FAR_Reset_Unit =
