@@ -18,7 +18,7 @@ _vehicles = call compile preprocessFileLineNumbers format ["%1\getVehicles.sqf",
 _exclVehicleIDs = [];
 
 {
-	private ["_veh", "_vehicleID", "_class", "_pos", "_dir", "_vel", "_flying", "_damage", "_fuel", "_hitPoints", "_owner", "_variables", "_textures", "_weapons", "_magazines", "_items", "_backpacks", "_magsAdded", "_magPathStr", "_turretMags", "_turretMags2", "_turretMags3", "_ammoCargo", "_fuelCargo", "_repairCargo", "_hoursAlive", "_hoursUnused", "_valid"];
+	private ["_veh", "_vehicleID", "_class", "_pos", "_dir", "_vel", "_flying", "_damage", "_fuel", "_hitPoints", "_owner", "_variables", "_textures", "_weapons", "_magazines", "_items", "_backpacks", "_magsAdded", "_magPathStr", "_turretMags", "_turretMags2", "_turretMags3", "_ammoCargo", "_fuelCargo", "_repairCargo", "_hoursAlive", "_hoursUnused", "_valid", "_lockState"];
 
 	{ (_x select 1) call compile format ["%1 = _this", _x select 0]	} forEach _x;
 
@@ -104,7 +104,7 @@ _exclVehicleIDs = [];
 		{ _veh setHitPointDamage _x } forEach _hitPoints;
 
 		_veh setFuel _fuel;
-
+				
 		if (!isNil "_textures") then
 		{
 			_veh setVariable ["BIS_enableRandomization", false, true];
@@ -127,17 +127,17 @@ _exclVehicleIDs = [];
 		};
 
 		{ _veh setVariable [_x select 0, _x select 1, true] } forEach _variables;
-		
+				
 		// If vehicle is was locked before restart then restore lockstate and make it untowable/unliftable LouD
-		if (_veh getVariable "R3F_LOG_disabled") then 
+		if (_veh getVariable "R3F_LOG_disabled") then
 		{
 			_veh lock 2;
 		} 
 		else 
 		{
 			_veh lock 1;
-		}; 
-		
+		};		
+				
 		clearWeaponCargoGlobal _veh;
 		clearMagazineCargoGlobal _veh;
 		clearItemCargoGlobal _veh;
