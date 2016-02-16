@@ -981,7 +981,7 @@ helicoptersArray = compileFinal str
 	["Mi-8AMT (Civilian)", "RHS_Mi8amt_civilian", 8000, "vehicle"],
 	["Mi-8MT (Cargo)", "RHS_Mi8mt_Cargo_vvs", 8500, "vehicle"],
 	["Mi-8MT (Side guns)", "RHS_Mi8mt_vvs", 12000, "vehicle"],
-	["Mi-8MTSh (Armed)", "RHS_Mi8AMTSh_vvs", 50000, "vehicle"],
+	["Mi-8MTSh (Armed)", "RHS_Mi8AMTSh_vvs", 60000, "vehicle"],
 	["Mi-8MTV-3 (Armed)", "RHS_Mi8MTV3_vvs", 53000, "vehicle"],
 	["Mi-24P Hind (Multi-Role)", "RHS_Mi24P_vvs", 70000, "vehicle"],
 	["Mi-24P Hind (CAS)", "RHS_Mi24P_CAS_vvs", 70000, "vehicle"],
