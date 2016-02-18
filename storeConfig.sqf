@@ -895,8 +895,8 @@ tanksArray = compileFinal str
 	["M1A2 SEPv1 (Desert)", "rhsusf_m1a2sep1d_usarmy", 52000, "vehicle"],
 	["M1A2 SEPv1 TUSK I (Woodland)", "rhsusf_m1a2sep1tuskid_usarmy", 55000, "vehicle"],
 	["M1A2 SEPv1 TUSK I (Desert)", "rhsusf_m1a2sep1tuskiwd_usarmy", 55000, "vehicle"],
-	["M1A2 SEPv1 TUSK II (Woodland)", "rhsusf_m1a2sep1tuskiid_usarmy", 57000, "vehicle"],
-	["M1A2 SEPv1 TUSK II (Desert)", "rhsusf_m1a2sep1tuskiiwd_usarmy", 57000, "vehicle"],
+	["M1A2 SEPv1 TUSK II (Woodland)", "rhsusf_m1a2sep1tuskiiwd_usarmy", 57000, "vehicle"],
+	["M1A2 SEPv1 TUSK II (Desert)", "rhsusf_m1a2sep1tuskiid_usarmy", 57000, "vehicle"],
 	["M109A6 Paladin (Woodland)", "rhsusf_m109_usarmy", 70000, "vehicle"],
 	["M109A6 Paladin (Desert)", "rhsusf_m109d_usarmy", 70000, "vehicle"],
 	
