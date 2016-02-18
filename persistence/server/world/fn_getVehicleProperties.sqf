@@ -41,18 +41,6 @@ switch (true) do
 };
 
 
-switch (true) do
-{
-	case _purchasedVehicle:
-	{
-		_variables pushBack ["A3W_purchasedVehicle", true];
-	};
-	case _missionVehicle:
-	{
-		_variables pushBack ["A3W_missionVehicle", true];
-	};
-};
-
 // Save lockstate by AgentRev
 _variables pushBack ["R3F_LOG_disabled", _veh getVariable ["R3F_LOG_disabled", false]];
 
